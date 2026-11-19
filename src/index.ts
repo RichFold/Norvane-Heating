@@ -54,7 +54,13 @@ function providerFor(origin: string): OAuthProvider<Env> {
 
 export default {
   async fetch(request: Request, bindings: Env, ctx: ExecutionContext): Promise<Response> {
-    const { pathname, origin } = new URL(request.url);
+    const url = new URL(request.url);
+    // www redirects to the apex domain, so there is one canonical origin for pages and OAuth.
+    if (url.hostname.startsWith("www.")) {
+      url.hostname = url.hostname.slice(4);
+      return Response.redirect(url.toString(), 301);
+    }
+    const { pathname, origin } = url;
     // PUBLIC_URL is optional: set it only to force a canonical origin.
     const publicUrl = (bindings.PUBLIC_URL || origin).replace(/\/+$/, "");
     const env: Env = { ...bindings, PUBLIC_URL: publicUrl };

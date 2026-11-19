@@ -6,6 +6,12 @@
   // nodejs_compat: agents/mcp/server uses AsyncLocalStorage.
   // global_fetch_strictly_public: required for Client ID Metadata Document lookups.
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Custom domain. The zone is in the same Cloudflare account, so deploy creates DNS and certificates.
+  // www is attached only so the Worker can redirect it to the apex domain.
+  "routes": [
+    { "pattern": "norvane-heating.com", "custom_domain": true },
+    { "pattern": "www.norvane-heating.com", "custom_domain": true }
+  ],
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "observability": { "enabled": true },
   "kv_namespaces": [

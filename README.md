@@ -192,7 +192,9 @@ Configuration:
 | `WEBMCP_OT_TOKEN` | Var    | Chrome origin trial token for WebMCP. Adds the `origin-trial` meta tag   |
 | `OAUTH_KV`        | KV     | OAuth clients, grants and tokens (stored hashed and encrypted)           |
 
-A custom domain also needs `allowedHostnames` and `allowedOriginHostnames` set on the two
+The `routes` in `wrangler.jsonc` attach `norvane-heating.com` and `www.norvane-heating.com` as
+custom domains; the Worker redirects `www` to the apex. Change or remove them to deploy elsewhere.
+Browser-based MCP clients hosted on other sites also need `allowedOriginHostnames` set on the two
 `createMcpHandler` calls in `src/mcp.ts`.
 
 ## Project layout
