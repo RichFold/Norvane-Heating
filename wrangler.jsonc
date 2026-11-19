@@ -9,8 +9,8 @@
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "observability": { "enabled": true },
   "kv_namespaces": [
-    // OAuth clients, grants and tokens. Create with: npx wrangler kv namespace create OAUTH_KV
-    { "binding": "OAUTH_KV", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }
+    // OAuth clients, grants and tokens. No ID: wrangler creates the namespace on the first deploy.
+    { "binding": "OAUTH_KV" }
   ],
   "ratelimits": [
     // MCP calls and WebMCP tool calls, per IP address.
@@ -21,9 +21,9 @@
     { "name": "OAUTH_LIMITER", "namespace_id": "4103", "simple": { "limit": 20, "period": 60 } }
   ],
   "vars": {
-    // The public origin of the deployed Worker, no trailing slash. OAuth tokens are bound to
-    // PUBLIC_URL + "/mcp/pro", so this must match the URL clients connect to.
-    "PUBLIC_URL": "https://norvane-demo.example.workers.dev",
+    // Optional. Forces a canonical public origin (no trailing slash). Left empty, the Worker uses
+    // the origin of each request, so localhost, workers.dev and a custom domain all just work.
+    "PUBLIC_URL": "",
     // Chrome origin trial token for WebMCP. Empty until the trial is registered.
     "WEBMCP_OT_TOKEN": ""
   }

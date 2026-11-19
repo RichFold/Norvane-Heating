@@ -168,30 +168,27 @@ npx wrangler login
 ```
 
 ```bash
-npx wrangler kv namespace create OAUTH_KV
+npm run deploy
 ```
 
-Put the namespace ID it prints into `wrangler.jsonc`, and set `PUBLIC_URL` there to the Worker's
-public origin (for example `https://norvane-demo.<your-subdomain>.workers.dev`, no trailing
-slash). OAuth tokens are bound to `PUBLIC_URL + "/mcp/pro"`, so it must match the URL clients
-connect to.
+The first deploy creates the `OAUTH_KV` namespace for you and prints the Worker's URL.
 
 ```bash
 npx wrangler secret put COOKIE_SECRET
 ```
 
-Use a long random value, for example the output of `openssl rand -base64 48`.
+Use a long random value, for example the output of `openssl rand -base64 48`. Portal sign-in
+returns an error until this secret is set.
 
-```bash
-npm run deploy
-```
+The Worker works out its public origin from each request, so there is no URL to configure. OAuth
+tokens are bound to that origin plus `/mcp/pro`.
 
 Configuration:
 
 | Name              | Kind   | Purpose                                                                  |
 | ----------------- | ------ | ------------------------------------------------------------------------ |
 | `COOKIE_SECRET`   | Secret | Signs the portal session cookie. Lives in Cloudflare, never in the repo  |
-| `PUBLIC_URL`      | Var    | Public origin of the Worker                                              |
+| `PUBLIC_URL`      | Var    | Optional. Forces a canonical origin; empty means use the request origin  |
 | `WEBMCP_OT_TOKEN` | Var    | Chrome origin trial token for WebMCP. Adds the `origin-trial` meta tag   |
 | `OAUTH_KV`        | KV     | OAuth clients, grants and tokens (stored hashed and encrypted)           |
 
