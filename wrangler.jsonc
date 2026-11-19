@@ -16,6 +16,8 @@
   "dev": { "host": "localhost:8787", "upstream_protocol": "http", "port": 8787 },
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "observability": { "enabled": true },
+  // Deploys leave alone any variables added in the Cloudflare dashboard, instead of removing them.
+  "keep_vars": true,
   "kv_namespaces": [
     // OAuth clients, grants and tokens. No ID: wrangler creates the namespace on the first deploy.
     { "binding": "OAUTH_KV" }
