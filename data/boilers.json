@@ -1,0 +1,549 @@
+[
+  {
+    "id": "c24",
+    "name": "C24",
+    "fullName": "Norvane C24",
+    "type": "combi",
+    "typeLabel": "Combi boiler",
+    "summary": "Our most compact combi. Heating and instant hot water for flats and smaller homes, with no cylinder or tank.",
+    "fuel": "Natural gas (G20). LPG conversion kit available.",
+    "output": {
+      "centralHeatingKw": 24,
+      "hotWaterKw": 24,
+      "minimumKw": 3.4,
+      "modulationRatio": "1:7",
+      "hotWaterFlowRateLpm": 9.8,
+      "hotWaterNote": "Flow rate at a 35 °C temperature rise."
+    },
+    "efficiency": {
+      "seasonalSpaceHeatingPercent": 94,
+      "erpHeating": "A",
+      "erpHotWater": "A (profile XL)",
+      "noxClass": 6,
+      "soundPowerDb": 44
+    },
+    "dimensions": {
+      "heightMm": 700,
+      "widthMm": 390,
+      "depthMm": 285
+    },
+    "weightKg": 31.5,
+    "flue": {
+      "options": [
+        "Horizontal concentric 60/100 mm",
+        "Vertical concentric 60/100 mm",
+        "Concentric 80/125 mm",
+        "Plume management kit 60 mm"
+      ],
+      "maxLengthsM": {
+        "horizontal60_100": 10,
+        "vertical60_100": 12,
+        "concentric80_125": 25
+      },
+      "bendAllowance": "Deduct 1.0 m per 90° bend and 0.5 m per 45° bend."
+    },
+    "gas": {
+      "connectionMm": 22,
+      "nominalInletPressureMbar": 20,
+      "minimumWorkingInletPressureMbar": 17,
+      "maxGasRateM3h": 2.6
+    },
+    "water": {
+      "flowReturnConnectionsMm": 22,
+      "systemPressureBar": {
+        "min": 0.8,
+        "normalCold": "1.0 to 1.5",
+        "max": 3.0
+      }
+    },
+    "electrical": {
+      "supply": "230 V ~ 50 Hz, fused 3 A",
+      "maxPowerW": 95,
+      "ipRating": "IPX4D"
+    },
+    "clearancesMm": {
+      "above": 165,
+      "below": 150,
+      "sides": 5,
+      "front": 450,
+      "frontInCupboard": 25
+    },
+    "condensate": {
+      "connectionMm": 21.5,
+      "maxRateLph": 2.6,
+      "siphon": "75 mm sealed trap, built in",
+      "note": "Run internally where possible. External runs: 32 mm minimum, insulated, 3 m maximum."
+    },
+    "warrantyYears": 10,
+    "priceBand": "£1,050 to £1,300 (boiler only)",
+    "suitableFor": {
+      "homeSizes": [
+        "small"
+      ],
+      "bedrooms": "1 to 2",
+      "bathrooms": "1"
+    },
+    "priceFromGbp": 1050,
+    "priceToGbp": 1300
+  },
+  {
+    "id": "c30",
+    "name": "C30",
+    "fullName": "Norvane C30",
+    "type": "combi",
+    "typeLabel": "Combi boiler",
+    "summary": "The all-rounder. Stronger hot water flow for a typical family home with one bathroom and an en suite.",
+    "fuel": "Natural gas (G20). LPG conversion kit available.",
+    "output": {
+      "centralHeatingKw": 24,
+      "hotWaterKw": 30,
+      "minimumKw": 3.6,
+      "modulationRatio": "1:7",
+      "hotWaterFlowRateLpm": 12.3,
+      "hotWaterNote": "Flow rate at a 35 °C temperature rise."
+    },
+    "efficiency": {
+      "seasonalSpaceHeatingPercent": 94,
+      "erpHeating": "A",
+      "erpHotWater": "A (profile XL)",
+      "noxClass": 6,
+      "soundPowerDb": 44
+    },
+    "dimensions": {
+      "heightMm": 700,
+      "widthMm": 390,
+      "depthMm": 285
+    },
+    "weightKg": 33.0,
+    "flue": {
+      "options": [
+        "Horizontal concentric 60/100 mm",
+        "Vertical concentric 60/100 mm",
+        "Concentric 80/125 mm",
+        "Plume management kit 60 mm"
+      ],
+      "maxLengthsM": {
+        "horizontal60_100": 10,
+        "vertical60_100": 12,
+        "concentric80_125": 25
+      },
+      "bendAllowance": "Deduct 1.0 m per 90° bend and 0.5 m per 45° bend."
+    },
+    "gas": {
+      "connectionMm": 22,
+      "nominalInletPressureMbar": 20,
+      "minimumWorkingInletPressureMbar": 17,
+      "maxGasRateM3h": 3.25
+    },
+    "water": {
+      "flowReturnConnectionsMm": 22,
+      "systemPressureBar": {
+        "min": 0.8,
+        "normalCold": "1.0 to 1.5",
+        "max": 3.0
+      }
+    },
+    "electrical": {
+      "supply": "230 V ~ 50 Hz, fused 3 A",
+      "maxPowerW": 95,
+      "ipRating": "IPX4D"
+    },
+    "clearancesMm": {
+      "above": 165,
+      "below": 150,
+      "sides": 5,
+      "front": 450,
+      "frontInCupboard": 25
+    },
+    "condensate": {
+      "connectionMm": 21.5,
+      "maxRateLph": 2.6,
+      "siphon": "75 mm sealed trap, built in",
+      "note": "Run internally where possible. External runs: 32 mm minimum, insulated, 3 m maximum."
+    },
+    "warrantyYears": 10,
+    "priceBand": "£1,200 to £1,450 (boiler only)",
+    "suitableFor": {
+      "homeSizes": [
+        "small",
+        "medium"
+      ],
+      "bedrooms": "2 to 3",
+      "bathrooms": "1 to 2"
+    },
+    "priceFromGbp": 1200,
+    "priceToGbp": 1450
+  },
+  {
+    "id": "c35",
+    "name": "C35",
+    "fullName": "Norvane C35",
+    "type": "combi",
+    "typeLabel": "Combi boiler",
+    "summary": "Our most powerful combi, for larger homes that want two showers running without a hot water cylinder.",
+    "fuel": "Natural gas (G20). LPG conversion kit available.",
+    "output": {
+      "centralHeatingKw": 30,
+      "hotWaterKw": 35,
+      "minimumKw": 4.4,
+      "modulationRatio": "1:7",
+      "hotWaterFlowRateLpm": 14.3,
+      "hotWaterNote": "Flow rate at a 35 °C temperature rise."
+    },
+    "efficiency": {
+      "seasonalSpaceHeatingPercent": 94,
+      "erpHeating": "A",
+      "erpHotWater": "A (profile XXL)",
+      "noxClass": 6,
+      "soundPowerDb": 46
+    },
+    "dimensions": {
+      "heightMm": 720,
+      "widthMm": 400,
+      "depthMm": 300
+    },
+    "weightKg": 36.5,
+    "flue": {
+      "options": [
+        "Horizontal concentric 60/100 mm",
+        "Vertical concentric 60/100 mm",
+        "Concentric 80/125 mm",
+        "Plume management kit 60 mm"
+      ],
+      "maxLengthsM": {
+        "horizontal60_100": 10,
+        "vertical60_100": 12,
+        "concentric80_125": 25
+      },
+      "bendAllowance": "Deduct 1.0 m per 90° bend and 0.5 m per 45° bend."
+    },
+    "gas": {
+      "connectionMm": 22,
+      "nominalInletPressureMbar": 20,
+      "minimumWorkingInletPressureMbar": 17,
+      "maxGasRateM3h": 3.8
+    },
+    "water": {
+      "flowReturnConnectionsMm": 22,
+      "systemPressureBar": {
+        "min": 0.8,
+        "normalCold": "1.0 to 1.5",
+        "max": 3.0
+      }
+    },
+    "electrical": {
+      "supply": "230 V ~ 50 Hz, fused 3 A",
+      "maxPowerW": 110,
+      "ipRating": "IPX4D"
+    },
+    "clearancesMm": {
+      "above": 165,
+      "below": 150,
+      "sides": 5,
+      "front": 450,
+      "frontInCupboard": 25
+    },
+    "condensate": {
+      "connectionMm": 21.5,
+      "maxRateLph": 3.3,
+      "siphon": "75 mm sealed trap, built in",
+      "note": "Run internally where possible. External runs: 32 mm minimum, insulated, 3 m maximum."
+    },
+    "warrantyYears": 12,
+    "priceBand": "£1,400 to £1,700 (boiler only)",
+    "suitableFor": {
+      "homeSizes": [
+        "medium",
+        "large"
+      ],
+      "bedrooms": "3 to 4",
+      "bathrooms": "2"
+    },
+    "priceFromGbp": 1400,
+    "priceToGbp": 1700
+  },
+  {
+    "id": "s25",
+    "name": "S25",
+    "fullName": "Norvane S25",
+    "type": "system",
+    "typeLabel": "System boiler",
+    "summary": "Pairs with an unvented hot water cylinder. Built-in pump and expansion vessel, suited to homes with two or more bathrooms.",
+    "fuel": "Natural gas (G20). LPG conversion kit available.",
+    "output": {
+      "centralHeatingKw": 25,
+      "hotWaterKw": 0,
+      "minimumKw": 3.6,
+      "modulationRatio": "1:7",
+      "hotWaterFlowRateLpm": 0,
+      "hotWaterNote": "Hot water comes from a separate cylinder, so no instant flow rate applies."
+    },
+    "efficiency": {
+      "seasonalSpaceHeatingPercent": 94,
+      "erpHeating": "A",
+      "erpHotWater": "Not applicable (cylinder dependent)",
+      "noxClass": 6,
+      "soundPowerDb": 44
+    },
+    "dimensions": {
+      "heightMm": 700,
+      "widthMm": 390,
+      "depthMm": 285
+    },
+    "weightKg": 30.0,
+    "flue": {
+      "options": [
+        "Horizontal concentric 60/100 mm",
+        "Vertical concentric 60/100 mm",
+        "Concentric 80/125 mm",
+        "Plume management kit 60 mm"
+      ],
+      "maxLengthsM": {
+        "horizontal60_100": 10,
+        "vertical60_100": 12,
+        "concentric80_125": 25
+      },
+      "bendAllowance": "Deduct 1.0 m per 90° bend and 0.5 m per 45° bend."
+    },
+    "gas": {
+      "connectionMm": 22,
+      "nominalInletPressureMbar": 20,
+      "minimumWorkingInletPressureMbar": 17,
+      "maxGasRateM3h": 2.71
+    },
+    "water": {
+      "flowReturnConnectionsMm": 22,
+      "systemPressureBar": {
+        "min": 0.8,
+        "normalCold": "1.0 to 1.5",
+        "max": 3.0
+      }
+    },
+    "electrical": {
+      "supply": "230 V ~ 50 Hz, fused 3 A",
+      "maxPowerW": 95,
+      "ipRating": "IPX4D"
+    },
+    "clearancesMm": {
+      "above": 165,
+      "below": 150,
+      "sides": 5,
+      "front": 450,
+      "frontInCupboard": 25
+    },
+    "condensate": {
+      "connectionMm": 21.5,
+      "maxRateLph": 2.8,
+      "siphon": "75 mm sealed trap, built in",
+      "note": "Run internally where possible. External runs: 32 mm minimum, insulated, 3 m maximum."
+    },
+    "warrantyYears": 10,
+    "priceBand": "£1,150 to £1,400 (boiler only)",
+    "suitableFor": {
+      "homeSizes": [
+        "medium",
+        "large"
+      ],
+      "bedrooms": "3 to 5",
+      "bathrooms": "2 or more"
+    },
+    "priceFromGbp": 1150,
+    "priceToGbp": 1400
+  },
+  {
+    "id": "r18",
+    "name": "R18",
+    "fullName": "Norvane R18",
+    "type": "regular",
+    "typeLabel": "Regular (heat only) boiler",
+    "summary": "A like-for-like replacement for older open-vented systems with a loft tank and hot water cylinder.",
+    "fuel": "Natural gas (G20). LPG conversion kit available.",
+    "output": {
+      "centralHeatingKw": 18,
+      "hotWaterKw": 0,
+      "minimumKw": 4.5,
+      "modulationRatio": "1:4",
+      "hotWaterFlowRateLpm": 0,
+      "hotWaterNote": "Hot water comes from a separate cylinder, so no instant flow rate applies."
+    },
+    "efficiency": {
+      "seasonalSpaceHeatingPercent": 93,
+      "erpHeating": "A",
+      "erpHotWater": "Not applicable (cylinder dependent)",
+      "noxClass": 6,
+      "soundPowerDb": 44
+    },
+    "dimensions": {
+      "heightMm": 600,
+      "widthMm": 370,
+      "depthMm": 270
+    },
+    "weightKg": 23.5,
+    "flue": {
+      "options": [
+        "Horizontal concentric 60/100 mm",
+        "Vertical concentric 60/100 mm",
+        "Concentric 80/125 mm",
+        "Plume management kit 60 mm"
+      ],
+      "maxLengthsM": {
+        "horizontal60_100": 8,
+        "vertical60_100": 10,
+        "concentric80_125": 20
+      },
+      "bendAllowance": "Deduct 1.0 m per 90° bend and 0.5 m per 45° bend."
+    },
+    "gas": {
+      "connectionMm": 22,
+      "nominalInletPressureMbar": 20,
+      "minimumWorkingInletPressureMbar": 17,
+      "maxGasRateM3h": 1.95
+    },
+    "water": {
+      "flowReturnConnectionsMm": 22,
+      "systemPressureBar": {
+        "min": 0.0,
+        "normalCold": "Open vented: set by the feed and expansion tank height (1 m minimum static head)",
+        "max": 3.0
+      }
+    },
+    "electrical": {
+      "supply": "230 V ~ 50 Hz, fused 3 A",
+      "maxPowerW": 95,
+      "ipRating": "IPX4D"
+    },
+    "clearancesMm": {
+      "above": 165,
+      "below": 150,
+      "sides": 5,
+      "front": 450,
+      "frontInCupboard": 25
+    },
+    "condensate": {
+      "connectionMm": 21.5,
+      "maxRateLph": 2.0,
+      "siphon": "75 mm sealed trap, built in",
+      "note": "Run internally where possible. External runs: 32 mm minimum, insulated, 3 m maximum."
+    },
+    "warrantyYears": 7,
+    "priceBand": "£900 to £1,100 (boiler only)",
+    "suitableFor": {
+      "homeSizes": [
+        "small",
+        "medium"
+      ],
+      "bedrooms": "2 to 4",
+      "bathrooms": "1 to 2"
+    },
+    "priceFromGbp": 900,
+    "priceToGbp": 1100
+  },
+  {
+    "id": "h30",
+    "name": "H30 Hybrid",
+    "fullName": "Norvane H30 Hybrid",
+    "type": "hybrid",
+    "typeLabel": "Hybrid heat pump system",
+    "summary": "A 5 kW air source heat pump working alongside a 30 kW gas combi. The heat pump covers most of the heating; the boiler tops up on the coldest days and supplies hot water.",
+    "fuel": "Natural gas (G20). LPG conversion kit available.",
+    "output": {
+      "centralHeatingKw": 30,
+      "hotWaterKw": 30,
+      "minimumKw": 3.6,
+      "modulationRatio": "1:8",
+      "hotWaterFlowRateLpm": 12.3,
+      "hotWaterNote": "Flow rate at a 35 °C temperature rise."
+    },
+    "efficiency": {
+      "seasonalSpaceHeatingPercent": 134,
+      "erpHeating": "A++",
+      "erpHotWater": "A (profile XL)",
+      "noxClass": 6,
+      "soundPowerDb": 46,
+      "seasonalSpaceHeatingNote": "Combined seasonal efficiency of the hybrid package at 55 °C flow."
+    },
+    "dimensions": {
+      "heightMm": 700,
+      "widthMm": 390,
+      "depthMm": 285
+    },
+    "weightKg": 33.0,
+    "flue": {
+      "options": [
+        "Horizontal concentric 60/100 mm",
+        "Vertical concentric 60/100 mm",
+        "Concentric 80/125 mm",
+        "Plume management kit 60 mm"
+      ],
+      "maxLengthsM": {
+        "horizontal60_100": 10,
+        "vertical60_100": 12,
+        "concentric80_125": 25
+      },
+      "bendAllowance": "Deduct 1.0 m per 90° bend and 0.5 m per 45° bend."
+    },
+    "gas": {
+      "connectionMm": 22,
+      "nominalInletPressureMbar": 20,
+      "minimumWorkingInletPressureMbar": 17,
+      "maxGasRateM3h": 3.25
+    },
+    "water": {
+      "flowReturnConnectionsMm": 22,
+      "systemPressureBar": {
+        "min": 0.8,
+        "normalCold": "1.0 to 1.5",
+        "max": 3.0
+      }
+    },
+    "electrical": {
+      "supply": "230 V ~ 50 Hz, fused 3 A",
+      "maxPowerW": 110,
+      "ipRating": "IPX4D"
+    },
+    "clearancesMm": {
+      "above": 165,
+      "below": 150,
+      "sides": 5,
+      "front": 450,
+      "frontInCupboard": 25
+    },
+    "condensate": {
+      "connectionMm": 21.5,
+      "maxRateLph": 3.3,
+      "siphon": "75 mm sealed trap, built in",
+      "note": "Run internally where possible. External runs: 32 mm minimum, insulated, 3 m maximum."
+    },
+    "warrantyYears": 10,
+    "priceBand": "£5,800 to £7,200 (system, before grants)",
+    "suitableFor": {
+      "homeSizes": [
+        "medium",
+        "large"
+      ],
+      "bedrooms": "3 to 5",
+      "bathrooms": "1 to 2"
+    },
+    "heatPump": {
+      "outputKw": 5.0,
+      "scop": 4.1,
+      "refrigerant": "R290, 0.6 kg",
+      "outdoorUnitDimensionsMm": {
+        "heightMm": 715,
+        "widthMm": 1010,
+        "depthMm": 370
+      },
+      "outdoorUnitWeightKg": 62,
+      "soundPowerDb": 54,
+      "outdoorClearancesMm": {
+        "rear": 150,
+        "sides": 300,
+        "front": 1000
+      },
+      "operatingRangeC": "-20 to +35",
+      "electricalSupply": "230 V ~ 50 Hz, dedicated 16 A circuit"
+    },
+    "priceFromGbp": 5800,
+    "priceToGbp": 7200
+  }
+]

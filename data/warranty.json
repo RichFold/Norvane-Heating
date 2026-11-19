@@ -1,0 +1,25 @@
+{
+  "registration": "Register the boiler within 30 days of installation, online or through your installer.",
+  "conditions": [
+    "The boiler was installed and commissioned by a suitably qualified, registered engineer.",
+    "The warranty was registered within 30 days of installation.",
+    "The boiler has been serviced every 12 months by a registered engineer, and the service log is up to date.",
+    "The heating system was cleaned and protected with inhibitor when the boiler was installed.",
+    "Only genuine Norvane parts have been fitted."
+  ],
+  "covered": [
+    "Parts and labour to repair a manufacturing fault in the boiler.",
+    "Replacement of the boiler if it cannot be repaired.",
+    "The primary heat exchanger for the full warranty period."
+  ],
+  "notCovered": [
+    "Faults caused by the wider heating system, such as sludge, scale or leaking radiators.",
+    "Frozen condensate pipes and other weather damage.",
+    "Faults caused by the gas, water or electricity supply.",
+    "Third-party controls, and consumable items replaced at a routine service.",
+    "Boilers that have missed an annual service."
+  ],
+  "extendedWarranty": "Boilers fitted by a Norvane Approved Installer receive 2 extra years on top of the standard warranty.",
+  "howToClaim": "Call the Norvane warranty line on 0808 157 0146 with your serial number and service log to hand. Lines are open 8am to 6pm, Monday to Saturday.",
+  "helpline": "0808 157 0146"
+}

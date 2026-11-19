@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "norvane-demo",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  // nodejs_compat: agents/mcp/server uses AsyncLocalStorage.
+  // global_fetch_strictly_public: required for Client ID Metadata Document lookups.
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "observability": { "enabled": true },
+  "kv_namespaces": [
+    // OAuth clients, grants and tokens. Create with: npx wrangler kv namespace create OAUTH_KV
+    { "binding": "OAUTH_KV", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }
+  ],
+  "ratelimits": [
+    // MCP calls and WebMCP tool calls, per IP address.
+    { "name": "MCP_LIMITER", "namespace_id": "4101", "simple": { "limit": 60, "period": 60 } },
+    // Portal login and OAuth verification attempts, per IP address and per registration number.
+    { "name": "LOGIN_LIMITER", "namespace_id": "4102", "simple": { "limit": 5, "period": 60 } },
+    // OAuth client registration, authorisation page and token endpoint, per IP address.
+    { "name": "OAUTH_LIMITER", "namespace_id": "4103", "simple": { "limit": 20, "period": 60 } }
+  ],
+  "vars": {
+    // The public origin of the deployed Worker, no trailing slash. OAuth tokens are bound to
+    // PUBLIC_URL + "/mcp/pro", so this must match the URL clients connect to.
+    "PUBLIC_URL": "https://norvane-demo.example.workers.dev",
+    // Chrome origin trial token for WebMCP. Empty until the trial is registered.
+    "WEBMCP_OT_TOKEN": ""
+  }
+  // Secret (not stored here): COOKIE_SECRET. Set with: npx wrangler secret put COOKIE_SECRET
+}

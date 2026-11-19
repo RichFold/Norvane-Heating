@@ -1,0 +1,1110 @@
+[
+  {
+    "model": "c24",
+    "parts": [
+      {
+        "key": "gas-valve",
+        "partNumber": "NV-GV-4120",
+        "description": "Gas valve assembly",
+        "category": "Gas",
+        "tradePriceGbp": 118
+      },
+      {
+        "key": "ignition-electrode",
+        "partNumber": "NV-EL-2031",
+        "description": "Ignition and flame sensing electrode",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "ignition-lead",
+        "partNumber": "NV-EL-2044",
+        "description": "Ignition lead",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "spark-generator",
+        "partNumber": "NV-EL-2052",
+        "description": "Spark generator",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "fan",
+        "partNumber": "NV-FN-3310",
+        "description": "Fan assembly",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner",
+        "partNumber": "NV-BN-3410",
+        "description": "Burner with gasket",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner-door-seal",
+        "partNumber": "NV-SK-3507",
+        "description": "Burner door seal kit",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "heat-exchanger",
+        "partNumber": "NV-HX-3610",
+        "description": "Primary heat exchanger",
+        "category": "Combustion",
+        "tradePriceGbp": 312
+      },
+      {
+        "key": "plate-heat-exchanger",
+        "partNumber": "NV-PX-5210",
+        "description": "Hot water plate heat exchanger",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "diverter-valve",
+        "partNumber": "NV-DV-5305",
+        "description": "Diverter valve motor and cartridge",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pump",
+        "partNumber": "NV-PM-5402",
+        "description": "Circulating pump head",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pressure-sensor",
+        "partNumber": "NV-PS-5511",
+        "description": "Water pressure sensor",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "expansion-vessel",
+        "partNumber": "NV-EV-5608",
+        "description": "Expansion vessel",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "prv",
+        "partNumber": "NV-RV-5703",
+        "description": "Pressure relief valve, 3 bar",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "flow-thermistor",
+        "partNumber": "NV-TH-6101",
+        "description": "Flow thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "return-thermistor",
+        "partNumber": "NV-TH-6102",
+        "description": "Return thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "dhw-thermistor",
+        "partNumber": "NV-TH-6105",
+        "description": "Hot water outlet thermistor (NTC, immersed)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "overheat-stat",
+        "partNumber": "NV-TH-6110",
+        "description": "Overheat thermostat, 105 °C",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "flow-sensor",
+        "partNumber": "NV-FS-6203",
+        "description": "Hot water flow turbine sensor",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "air-pressure-switch",
+        "partNumber": "NV-AP-6301",
+        "description": "Air pressure switch",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "condensate-trap",
+        "partNumber": "NV-CT-7001",
+        "description": "Condensate trap and seal",
+        "category": "Condensate",
+        "tradePriceGbp": 22
+      },
+      {
+        "key": "pcb",
+        "partNumber": "NV-PC-8100",
+        "description": "Main control board (PCB)",
+        "category": "Electrical",
+        "tradePriceGbp": 164
+      },
+      {
+        "key": "display-board",
+        "partNumber": "NV-PC-8201",
+        "description": "Display and user interface board",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "wiring-harness",
+        "partNumber": "NV-WH-8302",
+        "description": "Low-voltage wiring harness",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "fuse-kit",
+        "partNumber": "NV-FU-8401",
+        "description": "Fuse kit (T3.15 A and T2 A)",
+        "category": "Electrical",
+        "tradePriceGbp": 6
+      },
+      {
+        "key": "outdoor-sensor",
+        "partNumber": "NV-CS-9001",
+        "description": "Outdoor weather sensor",
+        "category": "Controls",
+        "tradePriceGbp": 36
+      },
+      {
+        "key": "service-kit",
+        "partNumber": "NV-SK-1001",
+        "description": "Annual service kit (seals, electrode gasket, trap seal)",
+        "category": "Service",
+        "tradePriceGbp": 29
+      }
+    ]
+  },
+  {
+    "model": "c30",
+    "parts": [
+      {
+        "key": "gas-valve",
+        "partNumber": "NV-GV-4121",
+        "description": "Gas valve assembly",
+        "category": "Gas",
+        "tradePriceGbp": 118
+      },
+      {
+        "key": "ignition-electrode",
+        "partNumber": "NV-EL-2031",
+        "description": "Ignition and flame sensing electrode",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "ignition-lead",
+        "partNumber": "NV-EL-2044",
+        "description": "Ignition lead",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "spark-generator",
+        "partNumber": "NV-EL-2052",
+        "description": "Spark generator",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "fan",
+        "partNumber": "NV-FN-3311",
+        "description": "Fan assembly",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner",
+        "partNumber": "NV-BN-3411",
+        "description": "Burner with gasket",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner-door-seal",
+        "partNumber": "NV-SK-3507",
+        "description": "Burner door seal kit",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "heat-exchanger",
+        "partNumber": "NV-HX-3611",
+        "description": "Primary heat exchanger",
+        "category": "Combustion",
+        "tradePriceGbp": 312
+      },
+      {
+        "key": "plate-heat-exchanger",
+        "partNumber": "NV-PX-5212",
+        "description": "Hot water plate heat exchanger",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "diverter-valve",
+        "partNumber": "NV-DV-5305",
+        "description": "Diverter valve motor and cartridge",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pump",
+        "partNumber": "NV-PM-5402",
+        "description": "Circulating pump head",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pressure-sensor",
+        "partNumber": "NV-PS-5511",
+        "description": "Water pressure sensor",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "expansion-vessel",
+        "partNumber": "NV-EV-5608",
+        "description": "Expansion vessel",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "prv",
+        "partNumber": "NV-RV-5703",
+        "description": "Pressure relief valve, 3 bar",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "flow-thermistor",
+        "partNumber": "NV-TH-6101",
+        "description": "Flow thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "return-thermistor",
+        "partNumber": "NV-TH-6102",
+        "description": "Return thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "dhw-thermistor",
+        "partNumber": "NV-TH-6105",
+        "description": "Hot water outlet thermistor (NTC, immersed)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "overheat-stat",
+        "partNumber": "NV-TH-6110",
+        "description": "Overheat thermostat, 105 °C",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "flow-sensor",
+        "partNumber": "NV-FS-6203",
+        "description": "Hot water flow turbine sensor",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "air-pressure-switch",
+        "partNumber": "NV-AP-6301",
+        "description": "Air pressure switch",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "condensate-trap",
+        "partNumber": "NV-CT-7001",
+        "description": "Condensate trap and seal",
+        "category": "Condensate",
+        "tradePriceGbp": 22
+      },
+      {
+        "key": "pcb",
+        "partNumber": "NV-PC-8101",
+        "description": "Main control board (PCB)",
+        "category": "Electrical",
+        "tradePriceGbp": 164
+      },
+      {
+        "key": "display-board",
+        "partNumber": "NV-PC-8201",
+        "description": "Display and user interface board",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "wiring-harness",
+        "partNumber": "NV-WH-8302",
+        "description": "Low-voltage wiring harness",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "fuse-kit",
+        "partNumber": "NV-FU-8401",
+        "description": "Fuse kit (T3.15 A and T2 A)",
+        "category": "Electrical",
+        "tradePriceGbp": 6
+      },
+      {
+        "key": "outdoor-sensor",
+        "partNumber": "NV-CS-9001",
+        "description": "Outdoor weather sensor",
+        "category": "Controls",
+        "tradePriceGbp": 36
+      },
+      {
+        "key": "service-kit",
+        "partNumber": "NV-SK-1001",
+        "description": "Annual service kit (seals, electrode gasket, trap seal)",
+        "category": "Service",
+        "tradePriceGbp": 29
+      }
+    ]
+  },
+  {
+    "model": "c35",
+    "parts": [
+      {
+        "key": "gas-valve",
+        "partNumber": "NV-GV-4122",
+        "description": "Gas valve assembly",
+        "category": "Gas",
+        "tradePriceGbp": 118
+      },
+      {
+        "key": "ignition-electrode",
+        "partNumber": "NV-EL-2031",
+        "description": "Ignition and flame sensing electrode",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "ignition-lead",
+        "partNumber": "NV-EL-2044",
+        "description": "Ignition lead",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "spark-generator",
+        "partNumber": "NV-EL-2052",
+        "description": "Spark generator",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "fan",
+        "partNumber": "NV-FN-3312",
+        "description": "Fan assembly",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner",
+        "partNumber": "NV-BN-3412",
+        "description": "Burner with gasket",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner-door-seal",
+        "partNumber": "NV-SK-3508",
+        "description": "Burner door seal kit",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "heat-exchanger",
+        "partNumber": "NV-HX-3612",
+        "description": "Primary heat exchanger",
+        "category": "Combustion",
+        "tradePriceGbp": 312
+      },
+      {
+        "key": "plate-heat-exchanger",
+        "partNumber": "NV-PX-5216",
+        "description": "Hot water plate heat exchanger",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "diverter-valve",
+        "partNumber": "NV-DV-5305",
+        "description": "Diverter valve motor and cartridge",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pump",
+        "partNumber": "NV-PM-5404",
+        "description": "Circulating pump head",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pressure-sensor",
+        "partNumber": "NV-PS-5511",
+        "description": "Water pressure sensor",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "expansion-vessel",
+        "partNumber": "NV-EV-5610",
+        "description": "Expansion vessel",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "prv",
+        "partNumber": "NV-RV-5703",
+        "description": "Pressure relief valve, 3 bar",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "flow-thermistor",
+        "partNumber": "NV-TH-6101",
+        "description": "Flow thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "return-thermistor",
+        "partNumber": "NV-TH-6102",
+        "description": "Return thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "dhw-thermistor",
+        "partNumber": "NV-TH-6105",
+        "description": "Hot water outlet thermistor (NTC, immersed)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "overheat-stat",
+        "partNumber": "NV-TH-6110",
+        "description": "Overheat thermostat, 105 °C",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "flow-sensor",
+        "partNumber": "NV-FS-6203",
+        "description": "Hot water flow turbine sensor",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "air-pressure-switch",
+        "partNumber": "NV-AP-6301",
+        "description": "Air pressure switch",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "condensate-trap",
+        "partNumber": "NV-CT-7001",
+        "description": "Condensate trap and seal",
+        "category": "Condensate",
+        "tradePriceGbp": 22
+      },
+      {
+        "key": "pcb",
+        "partNumber": "NV-PC-8102",
+        "description": "Main control board (PCB)",
+        "category": "Electrical",
+        "tradePriceGbp": 164
+      },
+      {
+        "key": "display-board",
+        "partNumber": "NV-PC-8201",
+        "description": "Display and user interface board",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "wiring-harness",
+        "partNumber": "NV-WH-8302",
+        "description": "Low-voltage wiring harness",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "fuse-kit",
+        "partNumber": "NV-FU-8401",
+        "description": "Fuse kit (T3.15 A and T2 A)",
+        "category": "Electrical",
+        "tradePriceGbp": 6
+      },
+      {
+        "key": "outdoor-sensor",
+        "partNumber": "NV-CS-9001",
+        "description": "Outdoor weather sensor",
+        "category": "Controls",
+        "tradePriceGbp": 36
+      },
+      {
+        "key": "service-kit",
+        "partNumber": "NV-SK-1002",
+        "description": "Annual service kit (seals, electrode gasket, trap seal)",
+        "category": "Service",
+        "tradePriceGbp": 29
+      }
+    ]
+  },
+  {
+    "model": "s25",
+    "parts": [
+      {
+        "key": "gas-valve",
+        "partNumber": "NV-GV-4121",
+        "description": "Gas valve assembly",
+        "category": "Gas",
+        "tradePriceGbp": 118
+      },
+      {
+        "key": "ignition-electrode",
+        "partNumber": "NV-EL-2031",
+        "description": "Ignition and flame sensing electrode",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "ignition-lead",
+        "partNumber": "NV-EL-2044",
+        "description": "Ignition lead",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "spark-generator",
+        "partNumber": "NV-EL-2052",
+        "description": "Spark generator",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "fan",
+        "partNumber": "NV-FN-3311",
+        "description": "Fan assembly",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner",
+        "partNumber": "NV-BN-3411",
+        "description": "Burner with gasket",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner-door-seal",
+        "partNumber": "NV-SK-3507",
+        "description": "Burner door seal kit",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "heat-exchanger",
+        "partNumber": "NV-HX-3611",
+        "description": "Primary heat exchanger",
+        "category": "Combustion",
+        "tradePriceGbp": 312
+      },
+      {
+        "key": "pump",
+        "partNumber": "NV-PM-5402",
+        "description": "Circulating pump head",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pressure-sensor",
+        "partNumber": "NV-PS-5511",
+        "description": "Water pressure sensor",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "expansion-vessel",
+        "partNumber": "NV-EV-5610",
+        "description": "Expansion vessel",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "prv",
+        "partNumber": "NV-RV-5703",
+        "description": "Pressure relief valve, 3 bar",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "flow-thermistor",
+        "partNumber": "NV-TH-6101",
+        "description": "Flow thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "return-thermistor",
+        "partNumber": "NV-TH-6102",
+        "description": "Return thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "overheat-stat",
+        "partNumber": "NV-TH-6110",
+        "description": "Overheat thermostat, 105 °C",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "air-pressure-switch",
+        "partNumber": "NV-AP-6301",
+        "description": "Air pressure switch",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "condensate-trap",
+        "partNumber": "NV-CT-7001",
+        "description": "Condensate trap and seal",
+        "category": "Condensate",
+        "tradePriceGbp": 22
+      },
+      {
+        "key": "pcb",
+        "partNumber": "NV-PC-8103",
+        "description": "Main control board (PCB)",
+        "category": "Electrical",
+        "tradePriceGbp": 164
+      },
+      {
+        "key": "display-board",
+        "partNumber": "NV-PC-8201",
+        "description": "Display and user interface board",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "wiring-harness",
+        "partNumber": "NV-WH-8302",
+        "description": "Low-voltage wiring harness",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "fuse-kit",
+        "partNumber": "NV-FU-8401",
+        "description": "Fuse kit (T3.15 A and T2 A)",
+        "category": "Electrical",
+        "tradePriceGbp": 6
+      },
+      {
+        "key": "outdoor-sensor",
+        "partNumber": "NV-CS-9001",
+        "description": "Outdoor weather sensor",
+        "category": "Controls",
+        "tradePriceGbp": 36
+      },
+      {
+        "key": "service-kit",
+        "partNumber": "NV-SK-1001",
+        "description": "Annual service kit (seals, electrode gasket, trap seal)",
+        "category": "Service",
+        "tradePriceGbp": 29
+      }
+    ]
+  },
+  {
+    "model": "r18",
+    "parts": [
+      {
+        "key": "gas-valve",
+        "partNumber": "NV-GV-4120",
+        "description": "Gas valve assembly",
+        "category": "Gas",
+        "tradePriceGbp": 118
+      },
+      {
+        "key": "ignition-electrode",
+        "partNumber": "NV-EL-2031",
+        "description": "Ignition and flame sensing electrode",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "ignition-lead",
+        "partNumber": "NV-EL-2044",
+        "description": "Ignition lead",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "spark-generator",
+        "partNumber": "NV-EL-2052",
+        "description": "Spark generator",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "fan",
+        "partNumber": "NV-FN-3310",
+        "description": "Fan assembly",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner",
+        "partNumber": "NV-BN-3414",
+        "description": "Burner with gasket",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner-door-seal",
+        "partNumber": "NV-SK-3507",
+        "description": "Burner door seal kit",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "heat-exchanger",
+        "partNumber": "NV-HX-3614",
+        "description": "Primary heat exchanger",
+        "category": "Combustion",
+        "tradePriceGbp": 312
+      },
+      {
+        "key": "flow-thermistor",
+        "partNumber": "NV-TH-6101",
+        "description": "Flow thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "return-thermistor",
+        "partNumber": "NV-TH-6102",
+        "description": "Return thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "overheat-stat",
+        "partNumber": "NV-TH-6110",
+        "description": "Overheat thermostat, 105 °C",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "air-pressure-switch",
+        "partNumber": "NV-AP-6301",
+        "description": "Air pressure switch",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "condensate-trap",
+        "partNumber": "NV-CT-7001",
+        "description": "Condensate trap and seal",
+        "category": "Condensate",
+        "tradePriceGbp": 22
+      },
+      {
+        "key": "pcb",
+        "partNumber": "NV-PC-8104",
+        "description": "Main control board (PCB)",
+        "category": "Electrical",
+        "tradePriceGbp": 164
+      },
+      {
+        "key": "display-board",
+        "partNumber": "NV-PC-8201",
+        "description": "Display and user interface board",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "wiring-harness",
+        "partNumber": "NV-WH-8304",
+        "description": "Low-voltage wiring harness",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "fuse-kit",
+        "partNumber": "NV-FU-8401",
+        "description": "Fuse kit (T3.15 A and T2 A)",
+        "category": "Electrical",
+        "tradePriceGbp": 6
+      },
+      {
+        "key": "outdoor-sensor",
+        "partNumber": "NV-CS-9001",
+        "description": "Outdoor weather sensor",
+        "category": "Controls",
+        "tradePriceGbp": 36
+      },
+      {
+        "key": "service-kit",
+        "partNumber": "NV-SK-1001",
+        "description": "Annual service kit (seals, electrode gasket, trap seal)",
+        "category": "Service",
+        "tradePriceGbp": 29
+      }
+    ]
+  },
+  {
+    "model": "h30",
+    "parts": [
+      {
+        "key": "gas-valve",
+        "partNumber": "NV-GV-4121",
+        "description": "Gas valve assembly",
+        "category": "Gas",
+        "tradePriceGbp": 118
+      },
+      {
+        "key": "ignition-electrode",
+        "partNumber": "NV-EL-2031",
+        "description": "Ignition and flame sensing electrode",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "ignition-lead",
+        "partNumber": "NV-EL-2044",
+        "description": "Ignition lead",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "spark-generator",
+        "partNumber": "NV-EL-2052",
+        "description": "Spark generator",
+        "category": "Ignition",
+        "tradePriceGbp": 24
+      },
+      {
+        "key": "fan",
+        "partNumber": "NV-FN-3311",
+        "description": "Fan assembly",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner",
+        "partNumber": "NV-BN-3411",
+        "description": "Burner with gasket",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "burner-door-seal",
+        "partNumber": "NV-SK-3507",
+        "description": "Burner door seal kit",
+        "category": "Combustion",
+        "tradePriceGbp": 96
+      },
+      {
+        "key": "heat-exchanger",
+        "partNumber": "NV-HX-3611",
+        "description": "Primary heat exchanger",
+        "category": "Combustion",
+        "tradePriceGbp": 312
+      },
+      {
+        "key": "plate-heat-exchanger",
+        "partNumber": "NV-PX-5212",
+        "description": "Hot water plate heat exchanger",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "diverter-valve",
+        "partNumber": "NV-DV-5305",
+        "description": "Diverter valve motor and cartridge",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pump",
+        "partNumber": "NV-PM-5402",
+        "description": "Circulating pump head",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "pressure-sensor",
+        "partNumber": "NV-PS-5511",
+        "description": "Water pressure sensor",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "expansion-vessel",
+        "partNumber": "NV-EV-5608",
+        "description": "Expansion vessel",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "prv",
+        "partNumber": "NV-RV-5703",
+        "description": "Pressure relief valve, 3 bar",
+        "category": "Hydraulic",
+        "tradePriceGbp": 64
+      },
+      {
+        "key": "flow-thermistor",
+        "partNumber": "NV-TH-6101",
+        "description": "Flow thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "return-thermistor",
+        "partNumber": "NV-TH-6102",
+        "description": "Return thermistor (NTC, clip-on)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "dhw-thermistor",
+        "partNumber": "NV-TH-6105",
+        "description": "Hot water outlet thermistor (NTC, immersed)",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "overheat-stat",
+        "partNumber": "NV-TH-6110",
+        "description": "Overheat thermostat, 105 °C",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "flow-sensor",
+        "partNumber": "NV-FS-6203",
+        "description": "Hot water flow turbine sensor",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "air-pressure-switch",
+        "partNumber": "NV-AP-6301",
+        "description": "Air pressure switch",
+        "category": "Sensors",
+        "tradePriceGbp": 18
+      },
+      {
+        "key": "condensate-trap",
+        "partNumber": "NV-CT-7001",
+        "description": "Condensate trap and seal",
+        "category": "Condensate",
+        "tradePriceGbp": 22
+      },
+      {
+        "key": "pcb",
+        "partNumber": "NV-PC-8105",
+        "description": "Main control board (PCB)",
+        "category": "Electrical",
+        "tradePriceGbp": 164
+      },
+      {
+        "key": "display-board",
+        "partNumber": "NV-PC-8203",
+        "description": "Display and user interface board",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "wiring-harness",
+        "partNumber": "NV-WH-8302",
+        "description": "Low-voltage wiring harness",
+        "category": "Electrical",
+        "tradePriceGbp": 88
+      },
+      {
+        "key": "fuse-kit",
+        "partNumber": "NV-FU-8401",
+        "description": "Fuse kit (T3.15 A and T2 A)",
+        "category": "Electrical",
+        "tradePriceGbp": 6
+      },
+      {
+        "key": "outdoor-sensor",
+        "partNumber": "NV-CS-9001",
+        "description": "Outdoor weather sensor",
+        "category": "Controls",
+        "tradePriceGbp": 36
+      },
+      {
+        "key": "hp-comms-cable",
+        "partNumber": "NV-HP-9501",
+        "description": "Heat pump communication cable, 10 m",
+        "category": "Heat pump",
+        "tradePriceGbp": 140
+      },
+      {
+        "key": "hp-fan-motor",
+        "partNumber": "NV-HP-9510",
+        "description": "Outdoor unit fan motor",
+        "category": "Heat pump",
+        "tradePriceGbp": 140
+      },
+      {
+        "key": "hp-inverter-board",
+        "partNumber": "NV-HP-9520",
+        "description": "Outdoor unit inverter board",
+        "category": "Heat pump",
+        "tradePriceGbp": 286
+      },
+      {
+        "key": "hp-defrost-sensor",
+        "partNumber": "NV-HP-9532",
+        "description": "Outdoor coil defrost sensor",
+        "category": "Heat pump",
+        "tradePriceGbp": 140
+      },
+      {
+        "key": "service-kit",
+        "partNumber": "NV-SK-1001",
+        "description": "Annual service kit (seals, electrode gasket, trap seal)",
+        "category": "Service",
+        "tradePriceGbp": 29
+      }
+    ]
+  }
+]

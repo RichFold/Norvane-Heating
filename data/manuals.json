@@ -1,0 +1,464 @@
+[
+  {
+    "model": "c24",
+    "title": "Norvane C24 installation and servicing manual",
+    "documentNumber": "NV-ISM-C24-R4",
+    "revised": "2025-09-01",
+    "siting": [
+      "Fit on a flat, non-combustible wall able to carry the full operating weight.",
+      "A compartment needs no ventilation provided the stated clearances are kept.",
+      "Not suitable for external installation."
+    ],
+    "flueTerminalPositionsMm": {
+      "belowOpeningWindow": 300,
+      "belowGutter": 75,
+      "fromInternalCorner": 300,
+      "aboveGround": 300,
+      "facingSurface": 600,
+      "facingTerminal": 1200,
+      "fromOpeningInCarport": 1200
+    },
+    "gasSupply": {
+      "note": "Size the supply for no more than 1 mbar pressure drop between meter and appliance at maximum rate.",
+      "typicalPipeSize": "22 mm for runs up to 20 m"
+    },
+    "systemRequirements": [
+      "Flush and clean to BS 7593 and dose with inhibitor.",
+      "Fit a magnetic filter on the return.",
+      "Minimum system volume 40 litres for stable modulation.",
+      "Sealed system: filling link, 3 bar relief valve discharge to outside in 15 mm copper."
+    ],
+    "commissioning": [
+      "Fill, vent and check for leaks; set cold pressure.",
+      "Purge the gas supply and carry out a tightness test.",
+      "Check inlet standing and working pressures.",
+      "Set the appliance code d.93 = 24 if a replacement PCB is fitted.",
+      "Run the auto-calibration (d.88 = 1) and verify CO2 at maximum and minimum rate.",
+      "Set maximum heating output (d.00) to the calculated heat loss.",
+      "Complete the commissioning record and register the warranty within 30 days."
+    ],
+    "keyParameters": [
+      {
+        "code": "d.00",
+        "name": "Maximum heating output",
+        "range": "3.4 to 24 kW"
+      },
+      {
+        "code": "d.01",
+        "name": "Pump overrun",
+        "range": "1 to 60 minutes (default 5)"
+      },
+      {
+        "code": "d.40",
+        "name": "Ignition fan speed",
+        "range": "Factory set, read only"
+      },
+      {
+        "code": "d.71",
+        "name": "Wireless signal strength",
+        "range": "0 to 100%"
+      },
+      {
+        "code": "d.88",
+        "name": "Combustion auto-calibration",
+        "range": "0 = off, 1 = start"
+      },
+      {
+        "code": "d.95",
+        "name": "Firmware version",
+        "range": "Read only"
+      }
+    ],
+    "combustionSettings": {
+      "co2MaxRatePercent": "9.2 ± 0.3",
+      "co2MinRatePercent": "8.8 ± 0.3",
+      "coCo2RatioMax": 0.004,
+      "lpgCo2MaxRatePercent": "10.3 ± 0.3"
+    }
+  },
+  {
+    "model": "c30",
+    "title": "Norvane C30 installation and servicing manual",
+    "documentNumber": "NV-ISM-C30-R4",
+    "revised": "2025-09-01",
+    "siting": [
+      "Fit on a flat, non-combustible wall able to carry the full operating weight.",
+      "A compartment needs no ventilation provided the stated clearances are kept.",
+      "Not suitable for external installation."
+    ],
+    "flueTerminalPositionsMm": {
+      "belowOpeningWindow": 300,
+      "belowGutter": 75,
+      "fromInternalCorner": 300,
+      "aboveGround": 300,
+      "facingSurface": 600,
+      "facingTerminal": 1200,
+      "fromOpeningInCarport": 1200
+    },
+    "gasSupply": {
+      "note": "Size the supply for no more than 1 mbar pressure drop between meter and appliance at maximum rate.",
+      "typicalPipeSize": "22 mm for runs up to 12 m; 28 mm beyond"
+    },
+    "systemRequirements": [
+      "Flush and clean to BS 7593 and dose with inhibitor.",
+      "Fit a magnetic filter on the return.",
+      "Minimum system volume 40 litres for stable modulation.",
+      "Sealed system: filling link, 3 bar relief valve discharge to outside in 15 mm copper."
+    ],
+    "commissioning": [
+      "Fill, vent and check for leaks; set cold pressure.",
+      "Purge the gas supply and carry out a tightness test.",
+      "Check inlet standing and working pressures.",
+      "Set the appliance code d.93 = 30 if a replacement PCB is fitted.",
+      "Run the auto-calibration (d.88 = 1) and verify CO2 at maximum and minimum rate.",
+      "Set maximum heating output (d.00) to the calculated heat loss.",
+      "Complete the commissioning record and register the warranty within 30 days."
+    ],
+    "keyParameters": [
+      {
+        "code": "d.00",
+        "name": "Maximum heating output",
+        "range": "3.6 to 24 kW"
+      },
+      {
+        "code": "d.01",
+        "name": "Pump overrun",
+        "range": "1 to 60 minutes (default 5)"
+      },
+      {
+        "code": "d.40",
+        "name": "Ignition fan speed",
+        "range": "Factory set, read only"
+      },
+      {
+        "code": "d.71",
+        "name": "Wireless signal strength",
+        "range": "0 to 100%"
+      },
+      {
+        "code": "d.88",
+        "name": "Combustion auto-calibration",
+        "range": "0 = off, 1 = start"
+      },
+      {
+        "code": "d.95",
+        "name": "Firmware version",
+        "range": "Read only"
+      }
+    ],
+    "combustionSettings": {
+      "co2MaxRatePercent": "9.2 ± 0.3",
+      "co2MinRatePercent": "8.8 ± 0.3",
+      "coCo2RatioMax": 0.004,
+      "lpgCo2MaxRatePercent": "10.3 ± 0.3"
+    }
+  },
+  {
+    "model": "c35",
+    "title": "Norvane C35 installation and servicing manual",
+    "documentNumber": "NV-ISM-C35-R4",
+    "revised": "2025-09-01",
+    "siting": [
+      "Fit on a flat, non-combustible wall able to carry the full operating weight.",
+      "A compartment needs no ventilation provided the stated clearances are kept.",
+      "Not suitable for external installation."
+    ],
+    "flueTerminalPositionsMm": {
+      "belowOpeningWindow": 300,
+      "belowGutter": 75,
+      "fromInternalCorner": 300,
+      "aboveGround": 300,
+      "facingSurface": 600,
+      "facingTerminal": 1200,
+      "fromOpeningInCarport": 1200
+    },
+    "gasSupply": {
+      "note": "Size the supply for no more than 1 mbar pressure drop between meter and appliance at maximum rate.",
+      "typicalPipeSize": "22 mm for runs up to 12 m; 28 mm beyond"
+    },
+    "systemRequirements": [
+      "Flush and clean to BS 7593 and dose with inhibitor.",
+      "Fit a magnetic filter on the return.",
+      "Minimum system volume 40 litres for stable modulation.",
+      "Sealed system: filling link, 3 bar relief valve discharge to outside in 15 mm copper."
+    ],
+    "commissioning": [
+      "Fill, vent and check for leaks; set cold pressure.",
+      "Purge the gas supply and carry out a tightness test.",
+      "Check inlet standing and working pressures.",
+      "Set the appliance code d.93 = 35 if a replacement PCB is fitted.",
+      "Run the auto-calibration (d.88 = 1) and verify CO2 at maximum and minimum rate.",
+      "Set maximum heating output (d.00) to the calculated heat loss.",
+      "Complete the commissioning record and register the warranty within 30 days."
+    ],
+    "keyParameters": [
+      {
+        "code": "d.00",
+        "name": "Maximum heating output",
+        "range": "4.4 to 30 kW"
+      },
+      {
+        "code": "d.01",
+        "name": "Pump overrun",
+        "range": "1 to 60 minutes (default 5)"
+      },
+      {
+        "code": "d.40",
+        "name": "Ignition fan speed",
+        "range": "Factory set, read only"
+      },
+      {
+        "code": "d.71",
+        "name": "Wireless signal strength",
+        "range": "0 to 100%"
+      },
+      {
+        "code": "d.88",
+        "name": "Combustion auto-calibration",
+        "range": "0 = off, 1 = start"
+      },
+      {
+        "code": "d.95",
+        "name": "Firmware version",
+        "range": "Read only"
+      }
+    ],
+    "combustionSettings": {
+      "co2MaxRatePercent": "9.2 ± 0.3",
+      "co2MinRatePercent": "8.8 ± 0.3",
+      "coCo2RatioMax": 0.004,
+      "lpgCo2MaxRatePercent": "10.3 ± 0.3"
+    }
+  },
+  {
+    "model": "s25",
+    "title": "Norvane S25 installation and servicing manual",
+    "documentNumber": "NV-ISM-S25-R4",
+    "revised": "2025-09-01",
+    "siting": [
+      "Fit on a flat, non-combustible wall able to carry the full operating weight.",
+      "A compartment needs no ventilation provided the stated clearances are kept.",
+      "Not suitable for external installation."
+    ],
+    "flueTerminalPositionsMm": {
+      "belowOpeningWindow": 300,
+      "belowGutter": 75,
+      "fromInternalCorner": 300,
+      "aboveGround": 300,
+      "facingSurface": 600,
+      "facingTerminal": 1200,
+      "fromOpeningInCarport": 1200
+    },
+    "gasSupply": {
+      "note": "Size the supply for no more than 1 mbar pressure drop between meter and appliance at maximum rate.",
+      "typicalPipeSize": "22 mm for runs up to 20 m"
+    },
+    "systemRequirements": [
+      "Flush and clean to BS 7593 and dose with inhibitor.",
+      "Fit a magnetic filter on the return.",
+      "Minimum system volume 40 litres for stable modulation.",
+      "Sealed system: filling link, 3 bar relief valve discharge to outside in 15 mm copper."
+    ],
+    "commissioning": [
+      "Fill, vent and check for leaks; set cold pressure.",
+      "Purge the gas supply and carry out a tightness test.",
+      "Check inlet standing and working pressures.",
+      "Set the appliance code d.93 = 25 if a replacement PCB is fitted.",
+      "Run the auto-calibration (d.88 = 1) and verify CO2 at maximum and minimum rate.",
+      "Set maximum heating output (d.00) to the calculated heat loss.",
+      "Complete the commissioning record and register the warranty within 30 days."
+    ],
+    "keyParameters": [
+      {
+        "code": "d.00",
+        "name": "Maximum heating output",
+        "range": "3.6 to 25 kW"
+      },
+      {
+        "code": "d.01",
+        "name": "Pump overrun",
+        "range": "1 to 60 minutes (default 5)"
+      },
+      {
+        "code": "d.40",
+        "name": "Ignition fan speed",
+        "range": "Factory set, read only"
+      },
+      {
+        "code": "d.71",
+        "name": "Wireless signal strength",
+        "range": "0 to 100%"
+      },
+      {
+        "code": "d.88",
+        "name": "Combustion auto-calibration",
+        "range": "0 = off, 1 = start"
+      },
+      {
+        "code": "d.95",
+        "name": "Firmware version",
+        "range": "Read only"
+      }
+    ],
+    "combustionSettings": {
+      "co2MaxRatePercent": "9.2 ± 0.3",
+      "co2MinRatePercent": "8.8 ± 0.3",
+      "coCo2RatioMax": 0.004,
+      "lpgCo2MaxRatePercent": "10.3 ± 0.3"
+    }
+  },
+  {
+    "model": "r18",
+    "title": "Norvane R18 installation and servicing manual",
+    "documentNumber": "NV-ISM-R18-R4",
+    "revised": "2025-09-01",
+    "siting": [
+      "Fit on a flat, non-combustible wall able to carry the full operating weight.",
+      "A compartment needs no ventilation provided the stated clearances are kept.",
+      "Not suitable for external installation."
+    ],
+    "flueTerminalPositionsMm": {
+      "belowOpeningWindow": 300,
+      "belowGutter": 75,
+      "fromInternalCorner": 300,
+      "aboveGround": 300,
+      "facingSurface": 600,
+      "facingTerminal": 1200,
+      "fromOpeningInCarport": 1200
+    },
+    "gasSupply": {
+      "note": "Size the supply for no more than 1 mbar pressure drop between meter and appliance at maximum rate.",
+      "typicalPipeSize": "22 mm for runs up to 20 m"
+    },
+    "systemRequirements": [
+      "Flush and clean to BS 7593 and dose with inhibitor.",
+      "Fit a magnetic filter on the return.",
+      "Minimum system volume 40 litres for stable modulation.",
+      "Open-vented: 22 mm open vent, 15 mm cold feed, 1 m minimum static head."
+    ],
+    "commissioning": [
+      "Fill from the feed tank, vent and check for leaks.",
+      "Purge the gas supply and carry out a tightness test.",
+      "Check inlet standing and working pressures.",
+      "Set the appliance code d.93 = 18 if a replacement PCB is fitted.",
+      "Run the auto-calibration (d.88 = 1) and verify CO2 at maximum and minimum rate.",
+      "Set maximum heating output (d.00) to the calculated heat loss.",
+      "Complete the commissioning record and register the warranty within 30 days."
+    ],
+    "keyParameters": [
+      {
+        "code": "d.00",
+        "name": "Maximum heating output",
+        "range": "4.5 to 18 kW"
+      },
+      {
+        "code": "d.01",
+        "name": "Pump overrun",
+        "range": "1 to 60 minutes (default 5)"
+      },
+      {
+        "code": "d.40",
+        "name": "Ignition fan speed",
+        "range": "Factory set, read only"
+      },
+      {
+        "code": "d.71",
+        "name": "Wireless signal strength",
+        "range": "0 to 100%"
+      },
+      {
+        "code": "d.88",
+        "name": "Combustion auto-calibration",
+        "range": "0 = off, 1 = start"
+      },
+      {
+        "code": "d.95",
+        "name": "Firmware version",
+        "range": "Read only"
+      }
+    ],
+    "combustionSettings": {
+      "co2MaxRatePercent": "9.2 ± 0.3",
+      "co2MinRatePercent": "8.8 ± 0.3",
+      "coCo2RatioMax": 0.004,
+      "lpgCo2MaxRatePercent": "10.3 ± 0.3"
+    }
+  },
+  {
+    "model": "h30",
+    "title": "Norvane H30 Hybrid installation and servicing manual",
+    "documentNumber": "NV-ISM-H30-R4",
+    "revised": "2025-09-01",
+    "siting": [
+      "Fit on a flat, non-combustible wall able to carry the full operating weight.",
+      "A compartment needs no ventilation provided the stated clearances are kept.",
+      "Indoor unit not suitable for external installation. Outdoor unit on a level base with anti-vibration feet, 1 m minimum from the boundary."
+    ],
+    "flueTerminalPositionsMm": {
+      "belowOpeningWindow": 300,
+      "belowGutter": 75,
+      "fromInternalCorner": 300,
+      "aboveGround": 300,
+      "facingSurface": 600,
+      "facingTerminal": 1200,
+      "fromOpeningInCarport": 1200
+    },
+    "gasSupply": {
+      "note": "Size the supply for no more than 1 mbar pressure drop between meter and appliance at maximum rate.",
+      "typicalPipeSize": "22 mm for runs up to 12 m; 28 mm beyond"
+    },
+    "systemRequirements": [
+      "Flush and clean to BS 7593 and dose with inhibitor.",
+      "Fit a magnetic filter on the return.",
+      "Minimum system volume 40 litres for stable modulation.",
+      "Sealed system: filling link, 3 bar relief valve discharge to outside in 15 mm copper."
+    ],
+    "commissioning": [
+      "Fill, vent and check for leaks; set cold pressure.",
+      "Purge the gas supply and carry out a tightness test.",
+      "Check inlet standing and working pressures.",
+      "Set the appliance code d.93 = 31 if a replacement PCB is fitted.",
+      "Run the auto-calibration (d.88 = 1) and verify CO2 at maximum and minimum rate.",
+      "Set maximum heating output (d.00) to the calculated heat loss.",
+      "Complete the commissioning record and register the warranty within 30 days."
+    ],
+    "keyParameters": [
+      {
+        "code": "d.00",
+        "name": "Maximum heating output",
+        "range": "3.6 to 30 kW"
+      },
+      {
+        "code": "d.01",
+        "name": "Pump overrun",
+        "range": "1 to 60 minutes (default 5)"
+      },
+      {
+        "code": "d.40",
+        "name": "Ignition fan speed",
+        "range": "Factory set, read only"
+      },
+      {
+        "code": "d.71",
+        "name": "Wireless signal strength",
+        "range": "0 to 100%"
+      },
+      {
+        "code": "d.88",
+        "name": "Combustion auto-calibration",
+        "range": "0 = off, 1 = start"
+      },
+      {
+        "code": "d.95",
+        "name": "Firmware version",
+        "range": "Read only"
+      }
+    ],
+    "combustionSettings": {
+      "co2MaxRatePercent": "9.2 ± 0.3",
+      "co2MinRatePercent": "8.8 ± 0.3",
+      "coCo2RatioMax": 0.004,
+      "lpgCo2MaxRatePercent": "10.3 ± 0.3"
+    }
+  }
+]

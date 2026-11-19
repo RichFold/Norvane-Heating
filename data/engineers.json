@@ -1,0 +1,82 @@
+[
+  {
+    "regNumber": "NV-204817",
+    "firstName": "Amara",
+    "surname": "Okafor",
+    "status": "active",
+    "town": "Leeds",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-318642",
+    "firstName": "Daniel",
+    "surname": "Hartley",
+    "status": "active",
+    "town": "Bristol",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-427390",
+    "firstName": "Priya",
+    "surname": "Raman",
+    "status": "active",
+    "town": "Manchester",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-536128",
+    "firstName": "Callum",
+    "surname": "Fraser",
+    "status": "active",
+    "town": "Edinburgh",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-641975",
+    "firstName": "Bethan",
+    "surname": "Pryce",
+    "status": "active",
+    "town": "Cardiff",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-752063",
+    "firstName": "Tomasz",
+    "surname": "Wolski",
+    "status": "active",
+    "town": "Nottingham",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-863241",
+    "firstName": "Grace",
+    "surname": "Adeyemi",
+    "status": "active",
+    "town": "London",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-974586",
+    "firstName": "Liam",
+    "surname": "Thornton",
+    "status": "active",
+    "town": "Newcastle upon Tyne",
+    "registeredUntil": "2027-03-31"
+  },
+  {
+    "regNumber": "NV-185309",
+    "firstName": "Hannah",
+    "surname": "Whitlock",
+    "status": "lapsed",
+    "town": "Birmingham",
+    "registeredUntil": "2025-03-31"
+  },
+  {
+    "regNumber": "NV-296754",
+    "firstName": "Marcus",
+    "surname": "Devlin",
+    "status": "suspended",
+    "town": "Glasgow",
+    "registeredUntil": "2027-03-31"
+  }
+]

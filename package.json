@@ -1,0 +1,32 @@
+{
+  "name": "norvane-demo",
+  "version": "1.0.0",
+  "description": "Norvane Heating: a reference demo by Fold Digital showing gated content served to AI agents through a website, remote MCP and WebMCP.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichFold/Norvane-Heating.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RichFold/Norvane-Heating/issues"
+  },
+  "homepage": "https://github.com/RichFold/Norvane-Heating#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261119.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.165.0"
+  },
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^1.2.4",
+    "@modelcontextprotocol/server": "^2.4.0",
+    "agents": "^0.33.0",
+    "zod": "^4.6.7"
+  },
+  "private": true,
+  "type": "module"
+}

@@ -1,0 +1,3 @@
+# Copy to .dev.vars for local development. Never commit .dev.vars.
+COOKIE_SECRET=local-development-only-change-me
+PUBLIC_URL=http://localhost:8787

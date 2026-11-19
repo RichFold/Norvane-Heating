@@ -1,0 +1,214 @@
+[
+  {
+    "id": "inst-01",
+    "name": "Aire Valley Heating",
+    "town": "Leeds",
+    "postcodeAreas": [
+      "LS",
+      "BD",
+      "WF",
+      "HX",
+      "HG"
+    ],
+    "phone": "0113 496 0142",
+    "installs": [
+      "Combi",
+      "System",
+      "Regular"
+    ],
+    "rating": 4.8,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-02",
+    "name": "Mersey & Irwell Gas Services",
+    "town": "Manchester",
+    "postcodeAreas": [
+      "M",
+      "SK",
+      "OL",
+      "BL",
+      "WA"
+    ],
+    "phone": "0161 496 0387",
+    "installs": [
+      "Combi",
+      "System",
+      "Hybrid"
+    ],
+    "rating": 4.7,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-03",
+    "name": "Brindley Heating & Plumbing",
+    "town": "Birmingham",
+    "postcodeAreas": [
+      "B",
+      "WS",
+      "WV",
+      "DY",
+      "CV"
+    ],
+    "phone": "0121 496 0251",
+    "installs": [
+      "Combi",
+      "System",
+      "Regular"
+    ],
+    "rating": 4.6,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-04",
+    "name": "Harbourside Heating",
+    "town": "Bristol",
+    "postcodeAreas": [
+      "BS",
+      "BA",
+      "GL",
+      "SN"
+    ],
+    "phone": "0117 496 0419",
+    "installs": [
+      "Combi",
+      "System",
+      "Regular",
+      "Hybrid"
+    ],
+    "rating": 4.9,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-05",
+    "name": "Forth Heating Engineers",
+    "town": "Edinburgh",
+    "postcodeAreas": [
+      "EH",
+      "KY",
+      "FK",
+      "TD"
+    ],
+    "phone": "0131 496 0533",
+    "installs": [
+      "Combi",
+      "System",
+      "Hybrid"
+    ],
+    "rating": 4.8,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-06",
+    "name": "Taff Vale Boilers",
+    "town": "Cardiff",
+    "postcodeAreas": [
+      "CF",
+      "NP",
+      "SA"
+    ],
+    "phone": "029 2018 0176",
+    "installs": [
+      "Combi",
+      "Regular"
+    ],
+    "rating": 4.5,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-07",
+    "name": "Tyne Bridge Heating",
+    "town": "Newcastle upon Tyne",
+    "postcodeAreas": [
+      "NE",
+      "SR",
+      "DH",
+      "DL"
+    ],
+    "phone": "0191 498 0264",
+    "installs": [
+      "Combi",
+      "System",
+      "Regular"
+    ],
+    "rating": 4.7,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-08",
+    "name": "Southbank Boiler Company",
+    "town": "London",
+    "postcodeAreas": [
+      "SW",
+      "SE",
+      "W",
+      "E",
+      "N",
+      "NW",
+      "EC",
+      "WC",
+      "CR",
+      "KT",
+      "TW",
+      "BR"
+    ],
+    "phone": "020 7946 0318",
+    "installs": [
+      "Combi",
+      "System",
+      "Hybrid"
+    ],
+    "rating": 4.6,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-09",
+    "name": "Trent Heating Solutions",
+    "town": "Nottingham",
+    "postcodeAreas": [
+      "NG",
+      "DE",
+      "LE",
+      "S",
+      "LN"
+    ],
+    "phone": "0115 496 0497",
+    "installs": [
+      "Combi",
+      "System",
+      "Regular",
+      "Hybrid"
+    ],
+    "rating": 4.8,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  },
+  {
+    "id": "inst-10",
+    "name": "Clydeside Heating",
+    "town": "Glasgow",
+    "postcodeAreas": [
+      "G",
+      "PA",
+      "ML",
+      "KA"
+    ],
+    "phone": "0141 496 0605",
+    "installs": [
+      "Combi",
+      "System",
+      "Regular"
+    ],
+    "rating": 4.7,
+    "accreditation": "Norvane Approved Installer",
+    "extendedWarranty": true
+  }
+]

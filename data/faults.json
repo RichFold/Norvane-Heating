@@ -1,0 +1,986 @@
+[
+  {
+    "code": "F01",
+    "title": "Low system water pressure",
+    "severity": "Boiler stops until pressure is restored",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The water pressure in your heating system has dropped below 0.5 bar, so the boiler has stopped to protect itself.",
+      "safeThingToTry": "Top the system up to 1.3 bar using the grey filling lever under the boiler, following the steps in your user guide, then press Reset.",
+      "whenToCallAnEngineer": "Call an engineer if the pressure drops again within a few weeks, if you can see a leak, or if water is dripping from the copper pipe outside.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Confirm the displayed pressure against a calibrated gauge on the filling point.",
+        "Inspect the system and boiler for visible leaks, including the PRV discharge pipe and auto air vent.",
+        "Isolate the boiler from the system and check the expansion vessel pre-charge at the Schrader valve with the boiler side at 0 bar.",
+        "Recharge the vessel to 1.0 bar or replace it if water appears at the valve.",
+        "If pressure rises in hot water mode only, test the plate heat exchanger for an internal breach (combi and hybrid).",
+        "Check the pressure sensor signal and connector before refilling to 1.3 bar and venting."
+      ],
+      "readings": [
+        {
+          "measurement": "Expansion vessel pre-charge (system side at 0 bar)",
+          "expected": "1.0 bar ± 0.1"
+        },
+        {
+          "measurement": "Pressure sensor supply",
+          "expected": "5.0 V DC"
+        },
+        {
+          "measurement": "Pressure sensor signal at 1.3 bar",
+          "expected": "1.6 V DC ± 0.1"
+        },
+        {
+          "measurement": "Cold fill pressure",
+          "expected": "1.0 to 1.5 bar"
+        }
+      ],
+      "likelyPartKeys": [
+        "pressure-sensor",
+        "expansion-vessel",
+        "prv"
+      ],
+      "modelNotes": [
+        {
+          "model": "c35",
+          "note": "The C35 uses the larger 10 litre vessel (NV-EV-5610). Systems above 110 litres need an additional vessel."
+        },
+        {
+          "model": "s25",
+          "note": "Check the unvented cylinder's own expansion vessel and tundish before condemning the boiler vessel."
+        },
+        {
+          "model": "h30",
+          "note": "The hydraulic module shares the system water. Check the outdoor unit flexible hoses and the buffer connections for weeps."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F05",
+    "title": "Overheat lockout",
+    "severity": "Lockout, manual reset",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler got hotter than it should, usually because water is not circulating properly, and has shut down for safety.",
+      "safeThingToTry": "Make sure at least two radiator valves are fully open, wait 30 minutes for the boiler to cool, then press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code returns, or if the boiler is making banging or kettling noises.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Allow the appliance to cool, then check continuity across the overheat thermostat.",
+        "Confirm the pump runs and the system is vented; check for closed valves and blocked strainers.",
+        "Compare flow and return thermistor resistance against the NTC table at the measured pipe temperature.",
+        "Measure the flow and return differential at maximum rate.",
+        "Check the primary heat exchanger for scale or sludge restriction and take a system water sample.",
+        "Confirm the bypass setting and minimum flow rate."
+      ],
+      "readings": [
+        {
+          "measurement": "Overheat thermostat",
+          "expected": "Closed circuit below 95 °C, opens at 105 °C"
+        },
+        {
+          "measurement": "Flow/return differential at maximum rate",
+          "expected": "20 °C or less"
+        },
+        {
+          "measurement": "NTC resistance at 25 °C",
+          "expected": "10 kΩ ± 5%"
+        },
+        {
+          "measurement": "NTC resistance at 60 °C",
+          "expected": "2.5 kΩ ± 5%"
+        }
+      ],
+      "likelyPartKeys": [
+        "overheat-stat",
+        "pump",
+        "flow-thermistor",
+        "heat-exchanger"
+      ],
+      "modelNotes": [
+        {
+          "model": "r18",
+          "note": "The R18 relies on the external system pump. Check the pump overrun wiring at terminals PL and PN: loss of overrun is the most common cause."
+        },
+        {
+          "model": "c35",
+          "note": "Minimum flow rate through the C35 heat exchanger is 14 l/min; the C24 and C30 need 11 l/min."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F09",
+    "title": "Flow temperature sensor fault",
+    "severity": "Boiler stops, resets itself once repaired",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The sensor that measures the temperature of water leaving the boiler is giving a reading the boiler cannot trust.",
+      "safeThingToTry": "Switch the boiler off at the wall switch for 30 seconds, switch it back on, and press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code comes straight back. The sensor or its wiring needs testing.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Isolate the electrical supply and unplug the flow thermistor.",
+        "Measure the thermistor resistance and compare with the NTC table for the pipe temperature.",
+        "Check the harness for continuity and for shorts to earth between the sensor plug and PCB connector X4.",
+        "Inspect the clip contact area for corrosion and refit with heat transfer paste.",
+        "Replace the thermistor if out of tolerance; replace the harness if open or shorted."
+      ],
+      "readings": [
+        {
+          "measurement": "NTC resistance at 25 °C",
+          "expected": "10 kΩ ± 5%"
+        },
+        {
+          "measurement": "NTC resistance at 60 °C",
+          "expected": "2.5 kΩ ± 5%"
+        },
+        {
+          "measurement": "Harness continuity, X4 pins 1 and 2",
+          "expected": "Less than 1 Ω"
+        },
+        {
+          "measurement": "Sensor supply at X4",
+          "expected": "5.0 V DC"
+        }
+      ],
+      "likelyPartKeys": [
+        "flow-thermistor",
+        "wiring-harness"
+      ],
+      "modelNotes": [
+        {
+          "model": "r18",
+          "note": "The R18 harness (NV-WH-8304) is not interchangeable with the other models."
+        },
+        {
+          "model": "h30",
+          "note": "The hydraulic module has its own flow sensor on the heat pump circuit; F09 refers only to the boiler flow thermistor."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F10",
+    "title": "Return temperature sensor fault",
+    "severity": "Boiler stops, resets itself once repaired",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The sensor that measures the temperature of water coming back to the boiler is giving a reading the boiler cannot trust.",
+      "safeThingToTry": "Switch the boiler off at the wall switch for 30 seconds, switch it back on, and press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code comes straight back.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Isolate the electrical supply and unplug the return thermistor.",
+        "Measure resistance against the NTC table.",
+        "Check harness continuity from the sensor plug to PCB connector X4 pins 3 and 4.",
+        "Confirm the flow and return sensors have not been swapped (return reading higher than flow at start-up).",
+        "Replace the thermistor or harness as indicated."
+      ],
+      "readings": [
+        {
+          "measurement": "NTC resistance at 25 °C",
+          "expected": "10 kΩ ± 5%"
+        },
+        {
+          "measurement": "NTC resistance at 40 °C",
+          "expected": "5.3 kΩ ± 5%"
+        },
+        {
+          "measurement": "Harness continuity, X4 pins 3 and 4",
+          "expected": "Less than 1 Ω"
+        }
+      ],
+      "likelyPartKeys": [
+        "return-thermistor",
+        "wiring-harness"
+      ],
+      "modelNotes": [
+        {
+          "model": "s25",
+          "note": "After cylinder reheat the return can exceed 70 °C. This is normal and does not indicate a sensor fault."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F13",
+    "title": "Hot water temperature sensor fault",
+    "severity": "Heating continues, hot water may run cool or fluctuate",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The sensor that controls your hot water temperature has a fault. Your heating should keep working, but hot water may be cooler than usual.",
+      "safeThingToTry": "Turn the hot water dial to its midpoint and run a hot tap for a minute. If the water is warm and steady, you can keep using it until an engineer visits.",
+      "whenToCallAnEngineer": "Call an engineer to replace the sensor. It is not urgent unless you have no hot water at all.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Unplug the hot water outlet thermistor and measure resistance against the NTC table.",
+        "Check the harness from the sensor to PCB connector X5.",
+        "Inspect the sensor pocket for scale; descale the plate heat exchanger if outlet temperature hunts.",
+        "Confirm the flow turbine registers demand (diagnostic menu d.36).",
+        "Replace the thermistor and reseal the pocket O-ring."
+      ],
+      "readings": [
+        {
+          "measurement": "NTC resistance at 25 °C",
+          "expected": "10 kΩ ± 5%"
+        },
+        {
+          "measurement": "NTC resistance at 50 °C",
+          "expected": "3.6 kΩ ± 5%"
+        },
+        {
+          "measurement": "Flow turbine reading at one open tap (d.36)",
+          "expected": "More than 2.5 l/min"
+        }
+      ],
+      "likelyPartKeys": [
+        "dhw-thermistor",
+        "flow-sensor",
+        "plate-heat-exchanger"
+      ],
+      "modelNotes": [
+        {
+          "model": "c35",
+          "note": "In hard water areas fit the NV scale reducer to the cold inlet; the C35 plate (NV-PX-5216) is the most sensitive to scale."
+        },
+        {
+          "model": "h30",
+          "note": "Hot water is always produced by the gas boiler on the H30, never by the heat pump."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F16",
+    "title": "Flame lost during operation",
+    "severity": "Lockout after 3 automatic restarts",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler lit but the flame went out while it was running. It tries again by itself three times before stopping.",
+      "safeThingToTry": "Check that other gas appliances, such as a hob, are working and that a prepayment meter has credit. Then press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code returns. Do not keep resetting.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Check inlet working pressure at maximum rate with other appliances running.",
+        "Measure flame ionisation current at minimum and maximum rate.",
+        "Inspect the electrode for wear and the gap to the burner; check the lead and earth.",
+        "Check flue integrity and look for recirculation of products at the air intake test point.",
+        "Check the condensate trap is clear and the heat exchanger is not flooded.",
+        "Run a full combustion analysis at minimum and maximum rate and adjust only if out of tolerance."
+      ],
+      "readings": [
+        {
+          "measurement": "Inlet working pressure at maximum rate",
+          "expected": "17 mbar minimum, 20 mbar nominal"
+        },
+        {
+          "measurement": "Flame ionisation current",
+          "expected": "More than 2.0 µA at minimum rate, more than 4.0 µA at maximum rate"
+        },
+        {
+          "measurement": "CO2 at maximum rate (G20)",
+          "expected": "9.2% ± 0.3"
+        },
+        {
+          "measurement": "CO2 at minimum rate (G20)",
+          "expected": "8.8% ± 0.3"
+        },
+        {
+          "measurement": "CO/CO2 ratio",
+          "expected": "Less than 0.004"
+        },
+        {
+          "measurement": "O2 at air intake test point",
+          "expected": "More than 20.5%"
+        }
+      ],
+      "likelyPartKeys": [
+        "ignition-electrode",
+        "ignition-lead",
+        "gas-valve",
+        "condensate-trap"
+      ],
+      "modelNotes": [
+        {
+          "model": "c35",
+          "note": "With flue runs over 6 m (60/100) set parameter d.50 to +2 to stabilise minimum rate."
+        },
+        {
+          "model": "r18",
+          "note": "On open-vented installations check for wind effect on short vertical flues before changing parts."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F20",
+    "title": "Fan fault",
+    "severity": "Lockout, manual reset",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The fan that pushes air through the boiler and out of the flue is not running at the speed the boiler expects.",
+      "safeThingToTry": "Check outside that the flue terminal is not blocked by leaves, snow or a nest. If it is clear, press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code returns. Never try to clear a blockage from inside the flue yourself.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "With a heat demand present, check for supply voltage at the fan plug.",
+        "Check the PWM control and tachometer feedback wiring between the fan and PCB connector X7.",
+        "Spin the impeller by hand with the power isolated; check for binding or debris.",
+        "Compare fan speed in the diagnostic menu (d.34) with the target speed (d.33).",
+        "Replace the fan if supplied and commanded but not running; replace the PCB if no supply is present."
+      ],
+      "readings": [
+        {
+          "measurement": "Fan supply voltage",
+          "expected": "230 V AC"
+        },
+        {
+          "measurement": "Tachometer feedback",
+          "expected": "2 pulses per revolution, 5 V square wave"
+        },
+        {
+          "measurement": "Fan speed at maximum rate (d.34)",
+          "expected": "Within 150 rpm of target (d.33)"
+        }
+      ],
+      "likelyPartKeys": [
+        "fan",
+        "wiring-harness",
+        "pcb"
+      ],
+      "modelNotes": [
+        {
+          "model": "c24",
+          "note": "The C24 and R18 share fan NV-FN-3310."
+        },
+        {
+          "model": "c35",
+          "note": "The C35 fan (NV-FN-3312) has a different venturi and must not be substituted."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F22",
+    "title": "Flue or air supply restriction",
+    "severity": "Lockout, manual reset",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler has detected that air is not flowing freely through the flue, so it has stopped as a precaution.",
+      "safeThingToTry": "Look at the flue terminal outside from a safe place on the ground. Remove anything obviously covering it, then press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if you cannot see a blockage, if the terminal is out of reach, or if the code returns.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Inspect the terminal and the full flue route for blockage, sagging or separated joints.",
+        "Check the total equivalent flue length against the maximum for the flue type, including bend allowances.",
+        "Measure the differential across the air pressure switch at maximum fan speed.",
+        "Check the sensing tubes for condensate, splits or kinks.",
+        "Check the condensate trap and discharge: a flooded sump raises back pressure.",
+        "Replace the air pressure switch only after the flue and tubes are proven clear."
+      ],
+      "readings": [
+        {
+          "measurement": "Air pressure switch differential at maximum fan speed",
+          "expected": "More than 110 Pa"
+        },
+        {
+          "measurement": "Switch make point",
+          "expected": "85 Pa ± 5"
+        },
+        {
+          "measurement": "O2 at air intake test point",
+          "expected": "More than 20.5%"
+        }
+      ],
+      "likelyPartKeys": [
+        "air-pressure-switch",
+        "condensate-trap",
+        "fan"
+      ],
+      "modelNotes": [
+        {
+          "model": "c24",
+          "note": "Maximum equivalent length is 10 m (60/100)."
+        },
+        {
+          "model": "c30",
+          "note": "Maximum equivalent length is 10 m (60/100)."
+        },
+        {
+          "model": "c35",
+          "note": "Maximum equivalent length is 8 m (60/100) or 20 m (80/125)."
+        },
+        {
+          "model": "r18",
+          "note": "Maximum equivalent length is 8 m (60/100)."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F25",
+    "title": "Condensate blocked or frozen",
+    "severity": "Lockout, manual reset",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The pipe that drains waste water from the boiler is blocked. In cold weather this usually means the section outside has frozen.",
+      "safeThingToTry": "If it is freezing outside, pour warm (not boiling) water over the white plastic pipe where it runs outdoors, or hold a hot water bottle against it. Then press Reset.",
+      "whenToCallAnEngineer": "Call an engineer if the pipe is not frozen, if you cannot reach it safely, or if the code returns once the weather warms up.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Check the external condensate run for freezing, sagging and insufficient fall.",
+        "Remove and clean the condensate trap; refill it with water before refitting.",
+        "Check the condensate level sensor (shared with the flame electrode circuit) for tracking to earth.",
+        "Confirm the discharge route: internal termination preferred, external runs 32 mm minimum, insulated, 3 m maximum.",
+        "Check the heat exchanger sump for debris and flush if required."
+      ],
+      "readings": [
+        {
+          "measurement": "Condensate pipe fall",
+          "expected": "44 mm per metre minimum (2.5°)"
+        },
+        {
+          "measurement": "Trap seal depth",
+          "expected": "75 mm"
+        },
+        {
+          "measurement": "External pipe diameter",
+          "expected": "32 mm minimum"
+        }
+      ],
+      "likelyPartKeys": [
+        "condensate-trap",
+        "ignition-electrode"
+      ],
+      "modelNotes": [
+        {
+          "model": "c35",
+          "note": "The C35 produces up to 3.3 l/h of condensate. Do not connect it to a 21.5 mm external run."
+        },
+        {
+          "model": "h30",
+          "note": "The outdoor unit has its own defrost drain. F25 refers only to the boiler condensate."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F28",
+    "title": "Ignition failure",
+    "severity": "Lockout after 5 ignition attempts",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler tried to light five times and could not. This is often a gas supply problem rather than a fault with the boiler itself.",
+      "safeThingToTry": "Check that your gas supply is on: see whether another gas appliance works, and whether a prepayment meter has credit. If gas is available, press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the boiler does not light after one reset. Do not attempt any work on the gas valve or burner yourself. That work must only be done by a qualified, registered engineer.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Confirm gas is present at the meter and the appliance isolation valve is open; check meter and regulator for a low-pressure cut-off.",
+        "Measure inlet standing pressure, then working pressure at maximum rate with other appliances running.",
+        "Observe the ignition sequence: fan pre-purge, spark for 8 seconds, gas valve energised.",
+        "If there is no spark: check the electrode gap, lead continuity and spark generator supply.",
+        "If there is a spark but no flame: check for 24 V DC at the gas valve coils during the ignition period and measure both coil resistances.",
+        "If the valve is energised and coils are in tolerance but no gas passes, check the offset pressure and replace the gas valve.",
+        "If flame establishes then drops out within 5 seconds, measure ionisation current and check the electrode, earth and condensate trap.",
+        "After any gas valve replacement, set CO2 at maximum and minimum rate, carry out a tightness test and record the readings."
+      ],
+      "readings": [
+        {
+          "measurement": "Inlet standing pressure",
+          "expected": "20 mbar ± 1"
+        },
+        {
+          "measurement": "Inlet working pressure at maximum rate",
+          "expected": "17 mbar minimum"
+        },
+        {
+          "measurement": "Gas valve coil supply during ignition",
+          "expected": "24 V DC ± 2"
+        },
+        {
+          "measurement": "Gas valve coil resistance, EV1",
+          "expected": "4.0 kΩ ± 10%"
+        },
+        {
+          "measurement": "Gas valve coil resistance, EV2",
+          "expected": "1.8 kΩ ± 10%"
+        },
+        {
+          "measurement": "Electrode gap to burner",
+          "expected": "4.0 mm ± 0.5"
+        },
+        {
+          "measurement": "Flame ionisation current",
+          "expected": "More than 2.0 µA"
+        },
+        {
+          "measurement": "Gas valve offset pressure",
+          "expected": "-5 Pa ± 2"
+        },
+        {
+          "measurement": "CO2 at maximum rate (G20)",
+          "expected": "9.2% ± 0.3"
+        },
+        {
+          "measurement": "CO2 at minimum rate (G20)",
+          "expected": "8.8% ± 0.3"
+        }
+      ],
+      "likelyPartKeys": [
+        "ignition-electrode",
+        "ignition-lead",
+        "spark-generator",
+        "gas-valve",
+        "pcb"
+      ],
+      "modelNotes": [
+        {
+          "model": "c24",
+          "note": "Gas valve NV-GV-4120 is shared with the R18. Ignition fan speed is 3,400 rpm (d.40)."
+        },
+        {
+          "model": "c30",
+          "note": "Gas valve NV-GV-4121 is shared with the S25 and H30. Ignition fan speed is 3,600 rpm (d.40). See bulletin TB-2024-03 if the PCB firmware is below v2.14."
+        },
+        {
+          "model": "c35",
+          "note": "Gas valve NV-GV-4122 is unique to the C35. On LPG conversions confirm the 5.2 mm injector is fitted before adjusting."
+        },
+        {
+          "model": "s25",
+          "note": "Check the cylinder thermostat and zone valve end switch are calling before fault-finding ignition."
+        },
+        {
+          "model": "r18",
+          "note": "Check the external programmer and pump live are present; the R18 will not start its ignition sequence without a switched live at terminal SL."
+        },
+        {
+          "model": "h30",
+          "note": "In hybrid mode the boiler may not fire for days. Run a forced boiler test (d.90 = 2) to prove ignition before leaving site."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F31",
+    "title": "No water circulation",
+    "severity": "Lockout after 3 attempts",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler cannot move water around the heating system, so it has stopped to avoid overheating.",
+      "safeThingToTry": "Check that the radiator valves are open and that the pressure is at least 1.0 bar (not applicable on the R18). Then press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code returns or radiators stay cold.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Check system pressure and vent the pump and heat exchanger.",
+        "With a heat demand present, check for supply at the pump plug and for a PWM signal.",
+        "Free a seized rotor via the centre screw if applicable, then confirm the speed setting.",
+        "Check the flow/return differential rise in the first 30 seconds after ignition.",
+        "Check for a blocked heat exchanger, strainer or magnetic filter.",
+        "Replace the pump head if supplied but not rotating."
+      ],
+      "readings": [
+        {
+          "measurement": "Pump supply voltage",
+          "expected": "230 V AC"
+        },
+        {
+          "measurement": "Pump PWM signal",
+          "expected": "10 to 95% duty at 100 Hz"
+        },
+        {
+          "measurement": "Temperature rise in first 30 seconds",
+          "expected": "Less than 30 °C"
+        },
+        {
+          "measurement": "Flow/return differential at maximum rate",
+          "expected": "20 °C or less"
+        }
+      ],
+      "likelyPartKeys": [
+        "pump",
+        "pcb",
+        "flow-thermistor",
+        "return-thermistor"
+      ],
+      "modelNotes": [
+        {
+          "model": "r18",
+          "note": "No pump is fitted inside the R18. Check the external pump, its capacitor and the pump overrun wiring; no Norvane pump part applies to this model."
+        },
+        {
+          "model": "s25",
+          "note": "Check the cylinder zone valve opens fully before suspecting the pump."
+        },
+        {
+          "model": "h30",
+          "note": "The hydraulic module has a second pump for the heat pump circuit; see F61 if that circuit is at fault."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F37",
+    "title": "Gas valve drive fault",
+    "severity": "Lockout, manual reset",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler's electronics have detected a problem with the circuit that opens the gas valve, and have shut the boiler down safely.",
+      "safeThingToTry": "Switch the boiler off at the wall switch for 30 seconds, switch it back on, and press Reset once.",
+      "whenToCallAnEngineer": "Call an engineer if the code returns. This fault needs a qualified, registered engineer and is not something to investigate yourself.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Isolate the supply and unplug the gas valve; measure both coil resistances.",
+        "Check the valve harness for continuity and for shorts to earth.",
+        "Reconnect and check the PCB drives 24 V DC to the valve only during a heat demand.",
+        "If voltage is present with no demand, replace the PCB.",
+        "If coils are out of tolerance, replace the gas valve, then set combustion and carry out a tightness test."
+      ],
+      "readings": [
+        {
+          "measurement": "Gas valve coil resistance, EV1",
+          "expected": "4.0 kΩ ± 10%"
+        },
+        {
+          "measurement": "Gas valve coil resistance, EV2",
+          "expected": "1.8 kΩ ± 10%"
+        },
+        {
+          "measurement": "Coil supply during demand",
+          "expected": "24 V DC ± 2"
+        },
+        {
+          "measurement": "Coil supply with no demand",
+          "expected": "0 V"
+        }
+      ],
+      "likelyPartKeys": [
+        "gas-valve",
+        "wiring-harness",
+        "pcb"
+      ],
+      "modelNotes": [
+        {
+          "model": "c30",
+          "note": "See bulletin TB-2024-03: PCB firmware below v2.14 can log a false F37 after a brownout."
+        },
+        {
+          "model": "s25",
+          "note": "See bulletin TB-2024-03: PCB firmware below v2.14 can log a false F37 after a brownout."
+        },
+        {
+          "model": "h30",
+          "note": "See bulletin TB-2024-03: PCB firmware below v2.14 can log a false F37 after a brownout."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F42",
+    "title": "Control board fault",
+    "severity": "Lockout, manual reset",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler's main electronic control has found an internal error.",
+      "safeThingToTry": "Switch the boiler off at the wall switch for a full minute, then switch it back on. This clears most one-off electronic glitches.",
+      "whenToCallAnEngineer": "Call an engineer if the code returns after the power has been switched off and on.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Check supply polarity, earth continuity and voltage at the appliance terminal block.",
+        "Check fuses F1 (T3.15 A) and F2 (T2 A) on the PCB.",
+        "Inspect the PCB for water ingress or scorch marks; trace and repair any leak above the control box first.",
+        "Disconnect external controls and retest to rule out a wiring fault on the 24 V bus.",
+        "Check the firmware version in d.95 and update if a bulletin applies.",
+        "Replace the PCB and transfer the appliance code (d.93) for the correct model."
+      ],
+      "readings": [
+        {
+          "measurement": "Supply voltage",
+          "expected": "230 V AC +10% / -15%"
+        },
+        {
+          "measurement": "Earth loop",
+          "expected": "Less than 1 Ω"
+        },
+        {
+          "measurement": "Fuse F1",
+          "expected": "T3.15 A, continuity"
+        },
+        {
+          "measurement": "Fuse F2",
+          "expected": "T2 A, continuity"
+        },
+        {
+          "measurement": "24 V bus",
+          "expected": "24 V DC ± 2"
+        }
+      ],
+      "likelyPartKeys": [
+        "pcb",
+        "fuse-kit",
+        "display-board"
+      ],
+      "modelNotes": [
+        {
+          "model": "c24",
+          "note": "Appliance code d.93 = 24."
+        },
+        {
+          "model": "c30",
+          "note": "Appliance code d.93 = 30."
+        },
+        {
+          "model": "c35",
+          "note": "Appliance code d.93 = 35."
+        },
+        {
+          "model": "s25",
+          "note": "Appliance code d.93 = 25."
+        },
+        {
+          "model": "r18",
+          "note": "Appliance code d.93 = 18."
+        },
+        {
+          "model": "h30",
+          "note": "Appliance code d.93 = 31. The hybrid PCB (NV-PC-8105) carries the heat pump interface and cannot be replaced with the C30 board."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F50",
+    "title": "Lost contact with controls",
+    "severity": "Boiler runs at a fixed safe setting",
+    "appliesTo": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The boiler has lost contact with its room control or outdoor weather sensor. It will keep your home warm at a fixed setting until this is fixed.",
+      "safeThingToTry": "If you have a wireless Norvane room control, replace its batteries and hold it near the boiler for a minute to reconnect.",
+      "whenToCallAnEngineer": "Call an engineer if the code is still showing an hour after changing the batteries, or if your controls are wired.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Check the two-core bus cable at the boiler and at the control for polarity-free 24 V.",
+        "Measure bus voltage with the control disconnected and connected.",
+        "Check the outdoor sensor resistance against the NTC table and inspect the cable route for damage.",
+        "Re-pair wireless controls (menu d.70) and check signal strength at the installed location.",
+        "Replace the control, sensor or PCB as the readings indicate."
+      ],
+      "readings": [
+        {
+          "measurement": "Bus voltage, control disconnected",
+          "expected": "24 V DC ± 2"
+        },
+        {
+          "measurement": "Bus voltage, control connected",
+          "expected": "More than 15 V DC"
+        },
+        {
+          "measurement": "Outdoor sensor at 10 °C",
+          "expected": "19.9 kΩ ± 5%"
+        },
+        {
+          "measurement": "Wireless signal (d.71)",
+          "expected": "More than 30%"
+        }
+      ],
+      "likelyPartKeys": [
+        "outdoor-sensor",
+        "pcb",
+        "wiring-harness"
+      ],
+      "modelNotes": [
+        {
+          "model": "h30",
+          "note": "The H30 needs the outdoor sensor to choose between heat sources. Without it the system defaults to boiler-only heating."
+        },
+        {
+          "model": "r18",
+          "note": "The R18 is usually wired to a conventional programmer. F50 only appears if a Norvane bus control has been fitted."
+        }
+      ]
+    }
+  },
+  {
+    "code": "F61",
+    "title": "Heat pump unit fault",
+    "severity": "Boiler takes over heating automatically",
+    "appliesTo": [
+      "h30"
+    ],
+    "homeowner": {
+      "whatItMeans": "The outdoor heat pump unit has stopped. Your gas boiler takes over automatically, so you will still have heating and hot water, but running costs will be higher until it is fixed.",
+      "safeThingToTry": "Check that the outdoor unit is not blocked by leaves, snow or anything stored against it, and that its outdoor isolator switch is on.",
+      "whenToCallAnEngineer": "Call an engineer to have the heat pump checked. It is not an emergency, because the boiler is covering for it.",
+      "safetyNote": "If you smell gas at any point, leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "engineer": {
+      "diagnosticSequence": [
+        "Read the outdoor unit sub-code in menu d.80 and note it before resetting.",
+        "Check the dedicated 16 A supply, isolator and RCBO.",
+        "Check the communication cable between the hydraulic module and outdoor unit for continuity and screen earthing.",
+        "Check the outdoor fan runs freely and the coil is clear; test the defrost sensor resistance.",
+        "Check flow rate through the heat pump circuit and clean the strainer.",
+        "If the inverter board reports an internal error (sub-codes 30 to 39), replace the inverter board. Do not open the refrigerant circuit: R290 work requires the appropriate hydrocarbon refrigerant qualification."
+      ],
+      "readings": [
+        {
+          "measurement": "Outdoor unit supply",
+          "expected": "230 V AC"
+        },
+        {
+          "measurement": "Communication bus",
+          "expected": "12 V DC ± 1, less than 2 Ω per core"
+        },
+        {
+          "measurement": "Defrost sensor at 0 °C",
+          "expected": "32.6 kΩ ± 5%"
+        },
+        {
+          "measurement": "Heat pump circuit flow rate",
+          "expected": "More than 14 l/min"
+        },
+        {
+          "measurement": "Flow/return differential, heat pump circuit",
+          "expected": "5 °C ± 2"
+        }
+      ],
+      "likelyPartKeys": [
+        "hp-comms-cable",
+        "hp-fan-motor",
+        "hp-defrost-sensor",
+        "hp-inverter-board"
+      ],
+      "modelNotes": [
+        {
+          "model": "h30",
+          "note": "Sub-codes 10 to 19 are sensor faults, 20 to 29 are flow faults and 30 to 39 are inverter faults. The system reverts to boiler-only heating until F61 is cleared."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "TB-2024-03",
+    "title": "False F37 after mains brownout: PCB firmware update",
+    "date": "2024-11-18",
+    "severity": "Advisory",
+    "affectedModels": [
+      "c30",
+      "s25",
+      "h30"
+    ],
+    "affectedSerialRange": "Serial numbers NV2301 to NV2409",
+    "summary": "PCB firmware below v2.14 can log a false F37 gas valve drive fault when mains voltage dips below 190 V for more than 200 ms.",
+    "detail": "The gas valve drive monitor samples the 24 V rail during the dip and reads it as a drive fault. The valve itself is unaffected and closes correctly. The lockout clears on reset but may recur at properties with weak supplies.",
+    "action": [
+      "Check the firmware version in d.95.",
+      "If below v2.14, update using service tool NV-ST-01 and firmware file v2.14 or later.",
+      "Do not replace the gas valve or PCB for an isolated F37 until the firmware has been updated.",
+      "Record the update in the service log."
+    ],
+    "partsRequired": "None. Firmware only."
+  },
+  {
+    "id": "TB-2025-01",
+    "title": "Condensate trap seal: revised part",
+    "date": "2025-02-10",
+    "severity": "Mandatory at next service",
+    "affectedModels": [
+      "c24",
+      "c30",
+      "c35",
+      "s25",
+      "r18",
+      "h30"
+    ],
+    "affectedSerialRange": "All appliances built before week 40 of 2024 (serial prefix up to NV2440)",
+    "summary": "The original condensate trap seal can harden over time and allow the trap to weep into the case.",
+    "detail": "A revised EPDM seal is now supplied with condensate trap NV-CT-7001 and in both annual service kits. Traps with the original black seal should be fitted with the revised green seal at the next service visit.",
+    "action": [
+      "At the next service, remove the trap and check the seal colour.",
+      "If black, fit the green seal from service kit NV-SK-1001 (NV-SK-1002 for the C35).",
+      "Check the case floor and PCB housing for signs of water and dry if needed.",
+      "Record the change in the service log."
+    ],
+    "partsRequired": "Service kit NV-SK-1001 or NV-SK-1002."
+  },
+  {
+    "id": "TB-2025-04",
+    "title": "H30 Hybrid: defrost sensor clip position",
+    "date": "2025-10-06",
+    "severity": "Advisory",
+    "affectedModels": [
+      "h30"
+    ],
+    "affectedSerialRange": "Outdoor units with serial prefix HP2501 to HP2531",
+    "summary": "On some outdoor units the coil defrost sensor clip was fitted one tube row too high, causing long defrost cycles and occasional F61 sub-code 14.",
+    "detail": "With the sensor too high on the coil it reads warmer than the coldest part of the coil, so defrost starts late and runs long. Performance is reduced in damp weather between 0 °C and 5 °C. There is no safety risk.",
+    "action": [
+      "Isolate the outdoor unit and remove the top cover.",
+      "Move the defrost sensor (NV-HP-9532) to the bottom tube row, 50 mm from the return bend, and refit the clip.",
+      "Check the sensor reads 32.6 kΩ ± 5% at 0 °C or compare with the NTC table.",
+      "Run a forced heat pump test (d.90 = 3) and record the visit."
+    ],
+    "partsRequired": "None unless the sensor is damaged (NV-HP-9532)."
+  }
+]

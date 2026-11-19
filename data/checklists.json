@@ -1,0 +1,1020 @@
+[
+  {
+    "model": "c24",
+    "title": "Norvane C24 annual service checklist",
+    "intervalMonths": 12,
+    "estimatedMinutes": 45,
+    "serviceKitPartNumber": "NV-SK-1001",
+    "sections": [
+      {
+        "section": "Before starting",
+        "tasks": [
+          {
+            "step": 1,
+            "task": "Confirm the appliance model and serial number against the service log."
+          },
+          {
+            "step": 2,
+            "task": "Ask the user about any faults; read the fault history (d.60 to d.69)."
+          },
+          {
+            "step": 3,
+            "task": "Check clearances and ventilation still meet the installation manual."
+          },
+          {
+            "step": 4,
+            "task": "Visually inspect the flue route, terminal position and all flue joints."
+          }
+        ]
+      },
+      {
+        "section": "Gas and combustion",
+        "tasks": [
+          {
+            "step": 5,
+            "task": "Carry out a gas tightness test."
+          },
+          {
+            "step": 6,
+            "task": "Record inlet standing pressure (20 mbar ± 1) and working pressure at maximum rate (17 mbar minimum)."
+          },
+          {
+            "step": 7,
+            "task": "Gas rate the appliance at maximum: 2.6 m³/h ± 5%."
+          },
+          {
+            "step": 8,
+            "task": "Run a combustion analysis at maximum rate: CO2 9.2% ± 0.3, CO/CO2 ratio below 0.004."
+          },
+          {
+            "step": 9,
+            "task": "Run a combustion analysis at minimum rate: CO2 8.8% ± 0.3."
+          },
+          {
+            "step": 10,
+            "task": "Check O2 at the air intake test point is above 20.5%."
+          }
+        ]
+      },
+      {
+        "section": "Burner and heat exchanger",
+        "tasks": [
+          {
+            "step": 11,
+            "task": "Only open the combustion chamber if readings are out of tolerance, or at the 5-year strip-down service."
+          },
+          {
+            "step": 12,
+            "task": "If opened: inspect the burner, clean the heat exchanger with a nylon brush and replace the burner door seal (service kit)."
+          },
+          {
+            "step": 13,
+            "task": "Check the electrode gap is 4.0 mm ± 0.5 and replace the electrode gasket if disturbed."
+          },
+          {
+            "step": 14,
+            "task": "Record flame ionisation current: more than 2.0 µA at minimum rate."
+          }
+        ]
+      },
+      {
+        "section": "Condensate",
+        "tasks": [
+          {
+            "step": 15,
+            "task": "Remove, clean and refill the condensate trap."
+          },
+          {
+            "step": 16,
+            "task": "Check the discharge route for fall, support and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Hydraulics",
+        "tasks": [
+          {
+            "step": 17,
+            "task": "Check the expansion vessel pre-charge is 1.0 bar with the system side at 0 bar."
+          },
+          {
+            "step": 18,
+            "task": "Check the pressure relief valve and discharge pipe."
+          },
+          {
+            "step": 19,
+            "task": "Confirm cold fill pressure is 1.0 to 1.5 bar."
+          },
+          {
+            "step": 20,
+            "task": "Clean the magnetic filter and check inhibitor concentration."
+          }
+        ]
+      },
+      {
+        "section": "Hot water",
+        "tasks": [
+          {
+            "step": 21,
+            "task": "Record hot water flow rate and temperature rise: 9.8 l/min at 35 °C rise."
+          },
+          {
+            "step": 22,
+            "task": "Check the diverter valve changes over cleanly."
+          },
+          {
+            "step": 23,
+            "task": "Clean the cold inlet filter and check the flow turbine reading (d.36)."
+          }
+        ]
+      },
+      {
+        "section": "Electrical and controls",
+        "tasks": [
+          {
+            "step": 24,
+            "task": "Check earth continuity, polarity and fuse rating (3 A)."
+          },
+          {
+            "step": 25,
+            "task": "Check the operation of the overheat thermostat and all safety devices."
+          },
+          {
+            "step": 26,
+            "task": "Check the firmware version (d.95) against current technical bulletins."
+          },
+          {
+            "step": 27,
+            "task": "Check room controls, programmer and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Finishing",
+        "tasks": [
+          {
+            "step": 28,
+            "task": "Reset the service reminder (d.96 = 0)."
+          },
+          {
+            "step": 29,
+            "task": "Complete the service log and record all readings."
+          },
+          {
+            "step": 30,
+            "task": "Leave the appliance in normal operation and explain any findings to the user."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "c30",
+    "title": "Norvane C30 annual service checklist",
+    "intervalMonths": 12,
+    "estimatedMinutes": 45,
+    "serviceKitPartNumber": "NV-SK-1001",
+    "sections": [
+      {
+        "section": "Before starting",
+        "tasks": [
+          {
+            "step": 1,
+            "task": "Confirm the appliance model and serial number against the service log."
+          },
+          {
+            "step": 2,
+            "task": "Ask the user about any faults; read the fault history (d.60 to d.69)."
+          },
+          {
+            "step": 3,
+            "task": "Check clearances and ventilation still meet the installation manual."
+          },
+          {
+            "step": 4,
+            "task": "Visually inspect the flue route, terminal position and all flue joints."
+          }
+        ]
+      },
+      {
+        "section": "Gas and combustion",
+        "tasks": [
+          {
+            "step": 5,
+            "task": "Carry out a gas tightness test."
+          },
+          {
+            "step": 6,
+            "task": "Record inlet standing pressure (20 mbar ± 1) and working pressure at maximum rate (17 mbar minimum)."
+          },
+          {
+            "step": 7,
+            "task": "Gas rate the appliance at maximum: 3.25 m³/h ± 5%."
+          },
+          {
+            "step": 8,
+            "task": "Run a combustion analysis at maximum rate: CO2 9.2% ± 0.3, CO/CO2 ratio below 0.004."
+          },
+          {
+            "step": 9,
+            "task": "Run a combustion analysis at minimum rate: CO2 8.8% ± 0.3."
+          },
+          {
+            "step": 10,
+            "task": "Check O2 at the air intake test point is above 20.5%."
+          }
+        ]
+      },
+      {
+        "section": "Burner and heat exchanger",
+        "tasks": [
+          {
+            "step": 11,
+            "task": "Only open the combustion chamber if readings are out of tolerance, or at the 5-year strip-down service."
+          },
+          {
+            "step": 12,
+            "task": "If opened: inspect the burner, clean the heat exchanger with a nylon brush and replace the burner door seal (service kit)."
+          },
+          {
+            "step": 13,
+            "task": "Check the electrode gap is 4.0 mm ± 0.5 and replace the electrode gasket if disturbed."
+          },
+          {
+            "step": 14,
+            "task": "Record flame ionisation current: more than 2.0 µA at minimum rate."
+          }
+        ]
+      },
+      {
+        "section": "Condensate",
+        "tasks": [
+          {
+            "step": 15,
+            "task": "Remove, clean and refill the condensate trap."
+          },
+          {
+            "step": 16,
+            "task": "Check the discharge route for fall, support and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Hydraulics",
+        "tasks": [
+          {
+            "step": 17,
+            "task": "Check the expansion vessel pre-charge is 1.0 bar with the system side at 0 bar."
+          },
+          {
+            "step": 18,
+            "task": "Check the pressure relief valve and discharge pipe."
+          },
+          {
+            "step": 19,
+            "task": "Confirm cold fill pressure is 1.0 to 1.5 bar."
+          },
+          {
+            "step": 20,
+            "task": "Clean the magnetic filter and check inhibitor concentration."
+          }
+        ]
+      },
+      {
+        "section": "Hot water",
+        "tasks": [
+          {
+            "step": 21,
+            "task": "Record hot water flow rate and temperature rise: 12.3 l/min at 35 °C rise."
+          },
+          {
+            "step": 22,
+            "task": "Check the diverter valve changes over cleanly."
+          },
+          {
+            "step": 23,
+            "task": "Clean the cold inlet filter and check the flow turbine reading (d.36)."
+          }
+        ]
+      },
+      {
+        "section": "Electrical and controls",
+        "tasks": [
+          {
+            "step": 24,
+            "task": "Check earth continuity, polarity and fuse rating (3 A)."
+          },
+          {
+            "step": 25,
+            "task": "Check the operation of the overheat thermostat and all safety devices."
+          },
+          {
+            "step": 26,
+            "task": "Check the firmware version (d.95) against current technical bulletins."
+          },
+          {
+            "step": 27,
+            "task": "Check room controls, programmer and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Finishing",
+        "tasks": [
+          {
+            "step": 28,
+            "task": "Reset the service reminder (d.96 = 0)."
+          },
+          {
+            "step": 29,
+            "task": "Complete the service log and record all readings."
+          },
+          {
+            "step": 30,
+            "task": "Leave the appliance in normal operation and explain any findings to the user."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "c35",
+    "title": "Norvane C35 annual service checklist",
+    "intervalMonths": 12,
+    "estimatedMinutes": 45,
+    "serviceKitPartNumber": "NV-SK-1002",
+    "sections": [
+      {
+        "section": "Before starting",
+        "tasks": [
+          {
+            "step": 1,
+            "task": "Confirm the appliance model and serial number against the service log."
+          },
+          {
+            "step": 2,
+            "task": "Ask the user about any faults; read the fault history (d.60 to d.69)."
+          },
+          {
+            "step": 3,
+            "task": "Check clearances and ventilation still meet the installation manual."
+          },
+          {
+            "step": 4,
+            "task": "Visually inspect the flue route, terminal position and all flue joints."
+          }
+        ]
+      },
+      {
+        "section": "Gas and combustion",
+        "tasks": [
+          {
+            "step": 5,
+            "task": "Carry out a gas tightness test."
+          },
+          {
+            "step": 6,
+            "task": "Record inlet standing pressure (20 mbar ± 1) and working pressure at maximum rate (17 mbar minimum)."
+          },
+          {
+            "step": 7,
+            "task": "Gas rate the appliance at maximum: 3.8 m³/h ± 5%."
+          },
+          {
+            "step": 8,
+            "task": "Run a combustion analysis at maximum rate: CO2 9.2% ± 0.3, CO/CO2 ratio below 0.004."
+          },
+          {
+            "step": 9,
+            "task": "Run a combustion analysis at minimum rate: CO2 8.8% ± 0.3."
+          },
+          {
+            "step": 10,
+            "task": "Check O2 at the air intake test point is above 20.5%."
+          }
+        ]
+      },
+      {
+        "section": "Burner and heat exchanger",
+        "tasks": [
+          {
+            "step": 11,
+            "task": "Only open the combustion chamber if readings are out of tolerance, or at the 5-year strip-down service."
+          },
+          {
+            "step": 12,
+            "task": "If opened: inspect the burner, clean the heat exchanger with a nylon brush and replace the burner door seal (service kit)."
+          },
+          {
+            "step": 13,
+            "task": "Check the electrode gap is 4.0 mm ± 0.5 and replace the electrode gasket if disturbed."
+          },
+          {
+            "step": 14,
+            "task": "Record flame ionisation current: more than 2.0 µA at minimum rate."
+          }
+        ]
+      },
+      {
+        "section": "Condensate",
+        "tasks": [
+          {
+            "step": 15,
+            "task": "Remove, clean and refill the condensate trap."
+          },
+          {
+            "step": 16,
+            "task": "Check the discharge route for fall, support and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Hydraulics",
+        "tasks": [
+          {
+            "step": 17,
+            "task": "Check the expansion vessel pre-charge is 1.0 bar with the system side at 0 bar."
+          },
+          {
+            "step": 18,
+            "task": "Check the pressure relief valve and discharge pipe."
+          },
+          {
+            "step": 19,
+            "task": "Confirm cold fill pressure is 1.0 to 1.5 bar."
+          },
+          {
+            "step": 20,
+            "task": "Clean the magnetic filter and check inhibitor concentration."
+          }
+        ]
+      },
+      {
+        "section": "Hot water",
+        "tasks": [
+          {
+            "step": 21,
+            "task": "Record hot water flow rate and temperature rise: 14.3 l/min at 35 °C rise."
+          },
+          {
+            "step": 22,
+            "task": "Check the diverter valve changes over cleanly."
+          },
+          {
+            "step": 23,
+            "task": "Clean the cold inlet filter and check the flow turbine reading (d.36)."
+          }
+        ]
+      },
+      {
+        "section": "Electrical and controls",
+        "tasks": [
+          {
+            "step": 24,
+            "task": "Check earth continuity, polarity and fuse rating (3 A)."
+          },
+          {
+            "step": 25,
+            "task": "Check the operation of the overheat thermostat and all safety devices."
+          },
+          {
+            "step": 26,
+            "task": "Check the firmware version (d.95) against current technical bulletins."
+          },
+          {
+            "step": 27,
+            "task": "Check room controls, programmer and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Finishing",
+        "tasks": [
+          {
+            "step": 28,
+            "task": "Reset the service reminder (d.96 = 0)."
+          },
+          {
+            "step": 29,
+            "task": "Complete the service log and record all readings."
+          },
+          {
+            "step": 30,
+            "task": "Leave the appliance in normal operation and explain any findings to the user."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "s25",
+    "title": "Norvane S25 annual service checklist",
+    "intervalMonths": 12,
+    "estimatedMinutes": 45,
+    "serviceKitPartNumber": "NV-SK-1001",
+    "sections": [
+      {
+        "section": "Before starting",
+        "tasks": [
+          {
+            "step": 1,
+            "task": "Confirm the appliance model and serial number against the service log."
+          },
+          {
+            "step": 2,
+            "task": "Ask the user about any faults; read the fault history (d.60 to d.69)."
+          },
+          {
+            "step": 3,
+            "task": "Check clearances and ventilation still meet the installation manual."
+          },
+          {
+            "step": 4,
+            "task": "Visually inspect the flue route, terminal position and all flue joints."
+          }
+        ]
+      },
+      {
+        "section": "Gas and combustion",
+        "tasks": [
+          {
+            "step": 5,
+            "task": "Carry out a gas tightness test."
+          },
+          {
+            "step": 6,
+            "task": "Record inlet standing pressure (20 mbar ± 1) and working pressure at maximum rate (17 mbar minimum)."
+          },
+          {
+            "step": 7,
+            "task": "Gas rate the appliance at maximum: 2.71 m³/h ± 5%."
+          },
+          {
+            "step": 8,
+            "task": "Run a combustion analysis at maximum rate: CO2 9.2% ± 0.3, CO/CO2 ratio below 0.004."
+          },
+          {
+            "step": 9,
+            "task": "Run a combustion analysis at minimum rate: CO2 8.8% ± 0.3."
+          },
+          {
+            "step": 10,
+            "task": "Check O2 at the air intake test point is above 20.5%."
+          }
+        ]
+      },
+      {
+        "section": "Burner and heat exchanger",
+        "tasks": [
+          {
+            "step": 11,
+            "task": "Only open the combustion chamber if readings are out of tolerance, or at the 5-year strip-down service."
+          },
+          {
+            "step": 12,
+            "task": "If opened: inspect the burner, clean the heat exchanger with a nylon brush and replace the burner door seal (service kit)."
+          },
+          {
+            "step": 13,
+            "task": "Check the electrode gap is 4.0 mm ± 0.5 and replace the electrode gasket if disturbed."
+          },
+          {
+            "step": 14,
+            "task": "Record flame ionisation current: more than 2.0 µA at minimum rate."
+          }
+        ]
+      },
+      {
+        "section": "Condensate",
+        "tasks": [
+          {
+            "step": 15,
+            "task": "Remove, clean and refill the condensate trap."
+          },
+          {
+            "step": 16,
+            "task": "Check the discharge route for fall, support and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Hydraulics",
+        "tasks": [
+          {
+            "step": 17,
+            "task": "Check the expansion vessel pre-charge is 1.0 bar with the system side at 0 bar."
+          },
+          {
+            "step": 18,
+            "task": "Check the pressure relief valve and discharge pipe."
+          },
+          {
+            "step": 19,
+            "task": "Confirm cold fill pressure is 1.0 to 1.5 bar."
+          },
+          {
+            "step": 20,
+            "task": "Clean the magnetic filter and check inhibitor concentration."
+          }
+        ]
+      },
+      {
+        "section": "Cylinder",
+        "tasks": [
+          {
+            "step": 21,
+            "task": "Check the cylinder thermostat and zone valve operation."
+          },
+          {
+            "step": 22,
+            "task": "Check the unvented cylinder safety valves, tundish and expansion vessel (G3 qualified engineers only)."
+          }
+        ]
+      },
+      {
+        "section": "Electrical and controls",
+        "tasks": [
+          {
+            "step": 23,
+            "task": "Check earth continuity, polarity and fuse rating (3 A)."
+          },
+          {
+            "step": 24,
+            "task": "Check the operation of the overheat thermostat and all safety devices."
+          },
+          {
+            "step": 25,
+            "task": "Check the firmware version (d.95) against current technical bulletins."
+          },
+          {
+            "step": 26,
+            "task": "Check room controls, programmer and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Finishing",
+        "tasks": [
+          {
+            "step": 27,
+            "task": "Reset the service reminder (d.96 = 0)."
+          },
+          {
+            "step": 28,
+            "task": "Complete the service log and record all readings."
+          },
+          {
+            "step": 29,
+            "task": "Leave the appliance in normal operation and explain any findings to the user."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "r18",
+    "title": "Norvane R18 annual service checklist",
+    "intervalMonths": 12,
+    "estimatedMinutes": 45,
+    "serviceKitPartNumber": "NV-SK-1001",
+    "sections": [
+      {
+        "section": "Before starting",
+        "tasks": [
+          {
+            "step": 1,
+            "task": "Confirm the appliance model and serial number against the service log."
+          },
+          {
+            "step": 2,
+            "task": "Ask the user about any faults; read the fault history (d.60 to d.69)."
+          },
+          {
+            "step": 3,
+            "task": "Check clearances and ventilation still meet the installation manual."
+          },
+          {
+            "step": 4,
+            "task": "Visually inspect the flue route, terminal position and all flue joints."
+          }
+        ]
+      },
+      {
+        "section": "Gas and combustion",
+        "tasks": [
+          {
+            "step": 5,
+            "task": "Carry out a gas tightness test."
+          },
+          {
+            "step": 6,
+            "task": "Record inlet standing pressure (20 mbar ± 1) and working pressure at maximum rate (17 mbar minimum)."
+          },
+          {
+            "step": 7,
+            "task": "Gas rate the appliance at maximum: 1.95 m³/h ± 5%."
+          },
+          {
+            "step": 8,
+            "task": "Run a combustion analysis at maximum rate: CO2 9.2% ± 0.3, CO/CO2 ratio below 0.004."
+          },
+          {
+            "step": 9,
+            "task": "Run a combustion analysis at minimum rate: CO2 8.8% ± 0.3."
+          },
+          {
+            "step": 10,
+            "task": "Check O2 at the air intake test point is above 20.5%."
+          }
+        ]
+      },
+      {
+        "section": "Burner and heat exchanger",
+        "tasks": [
+          {
+            "step": 11,
+            "task": "Only open the combustion chamber if readings are out of tolerance, or at the 5-year strip-down service."
+          },
+          {
+            "step": 12,
+            "task": "If opened: inspect the burner, clean the heat exchanger with a nylon brush and replace the burner door seal (service kit)."
+          },
+          {
+            "step": 13,
+            "task": "Check the electrode gap is 4.0 mm ± 0.5 and replace the electrode gasket if disturbed."
+          },
+          {
+            "step": 14,
+            "task": "Record flame ionisation current: more than 2.0 µA at minimum rate."
+          }
+        ]
+      },
+      {
+        "section": "Condensate",
+        "tasks": [
+          {
+            "step": 15,
+            "task": "Remove, clean and refill the condensate trap."
+          },
+          {
+            "step": 16,
+            "task": "Check the discharge route for fall, support and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Hydraulics",
+        "tasks": [
+          {
+            "step": 17,
+            "task": "Check the feed and expansion tank, ball valve and overflow."
+          },
+          {
+            "step": 18,
+            "task": "Check the open vent and cold feed are clear and correctly positioned."
+          },
+          {
+            "step": 19,
+            "task": "Check the external pump and the pump overrun operation."
+          },
+          {
+            "step": 20,
+            "task": "Clean the magnetic filter and check inhibitor concentration."
+          }
+        ]
+      },
+      {
+        "section": "Electrical and controls",
+        "tasks": [
+          {
+            "step": 21,
+            "task": "Check earth continuity, polarity and fuse rating (3 A)."
+          },
+          {
+            "step": 22,
+            "task": "Check the operation of the overheat thermostat and all safety devices."
+          },
+          {
+            "step": 23,
+            "task": "Check the firmware version (d.95) against current technical bulletins."
+          },
+          {
+            "step": 24,
+            "task": "Check room controls, programmer and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Finishing",
+        "tasks": [
+          {
+            "step": 25,
+            "task": "Reset the service reminder (d.96 = 0)."
+          },
+          {
+            "step": 26,
+            "task": "Complete the service log and record all readings."
+          },
+          {
+            "step": 27,
+            "task": "Leave the appliance in normal operation and explain any findings to the user."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "h30",
+    "title": "Norvane H30 Hybrid annual service checklist",
+    "intervalMonths": 12,
+    "estimatedMinutes": 75,
+    "serviceKitPartNumber": "NV-SK-1001",
+    "sections": [
+      {
+        "section": "Before starting",
+        "tasks": [
+          {
+            "step": 1,
+            "task": "Confirm the appliance model and serial number against the service log."
+          },
+          {
+            "step": 2,
+            "task": "Ask the user about any faults; read the fault history (d.60 to d.69)."
+          },
+          {
+            "step": 3,
+            "task": "Check clearances and ventilation still meet the installation manual."
+          },
+          {
+            "step": 4,
+            "task": "Visually inspect the flue route, terminal position and all flue joints."
+          }
+        ]
+      },
+      {
+        "section": "Gas and combustion",
+        "tasks": [
+          {
+            "step": 5,
+            "task": "Carry out a gas tightness test."
+          },
+          {
+            "step": 6,
+            "task": "Record inlet standing pressure (20 mbar ± 1) and working pressure at maximum rate (17 mbar minimum)."
+          },
+          {
+            "step": 7,
+            "task": "Gas rate the appliance at maximum: 3.25 m³/h ± 5%."
+          },
+          {
+            "step": 8,
+            "task": "Run a combustion analysis at maximum rate: CO2 9.2% ± 0.3, CO/CO2 ratio below 0.004."
+          },
+          {
+            "step": 9,
+            "task": "Run a combustion analysis at minimum rate: CO2 8.8% ± 0.3."
+          },
+          {
+            "step": 10,
+            "task": "Check O2 at the air intake test point is above 20.5%."
+          }
+        ]
+      },
+      {
+        "section": "Burner and heat exchanger",
+        "tasks": [
+          {
+            "step": 11,
+            "task": "Only open the combustion chamber if readings are out of tolerance, or at the 5-year strip-down service."
+          },
+          {
+            "step": 12,
+            "task": "If opened: inspect the burner, clean the heat exchanger with a nylon brush and replace the burner door seal (service kit)."
+          },
+          {
+            "step": 13,
+            "task": "Check the electrode gap is 4.0 mm ± 0.5 and replace the electrode gasket if disturbed."
+          },
+          {
+            "step": 14,
+            "task": "Record flame ionisation current: more than 2.0 µA at minimum rate."
+          }
+        ]
+      },
+      {
+        "section": "Condensate",
+        "tasks": [
+          {
+            "step": 15,
+            "task": "Remove, clean and refill the condensate trap."
+          },
+          {
+            "step": 16,
+            "task": "Check the discharge route for fall, support and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Hydraulics",
+        "tasks": [
+          {
+            "step": 17,
+            "task": "Check the expansion vessel pre-charge is 1.0 bar with the system side at 0 bar."
+          },
+          {
+            "step": 18,
+            "task": "Check the pressure relief valve and discharge pipe."
+          },
+          {
+            "step": 19,
+            "task": "Confirm cold fill pressure is 1.0 to 1.5 bar."
+          },
+          {
+            "step": 20,
+            "task": "Clean the magnetic filter and check inhibitor concentration."
+          }
+        ]
+      },
+      {
+        "section": "Hot water",
+        "tasks": [
+          {
+            "step": 21,
+            "task": "Record hot water flow rate and temperature rise: 12.3 l/min at 35 °C rise."
+          },
+          {
+            "step": 22,
+            "task": "Check the diverter valve changes over cleanly."
+          },
+          {
+            "step": 23,
+            "task": "Clean the cold inlet filter and check the flow turbine reading (d.36)."
+          }
+        ]
+      },
+      {
+        "section": "Heat pump",
+        "tasks": [
+          {
+            "step": 24,
+            "task": "Clean the outdoor coil and check the fan runs freely."
+          },
+          {
+            "step": 25,
+            "task": "Check the outdoor unit drain and clearances."
+          },
+          {
+            "step": 26,
+            "task": "Check heat pump circuit flow rate is above 14 l/min and clean the strainer."
+          },
+          {
+            "step": 27,
+            "task": "Visually inspect refrigerant pipework for oil traces. Do not open the R290 circuit."
+          },
+          {
+            "step": 28,
+            "task": "Run a forced boiler test (d.90 = 2) and a forced heat pump test (d.90 = 3)."
+          }
+        ]
+      },
+      {
+        "section": "Electrical and controls",
+        "tasks": [
+          {
+            "step": 29,
+            "task": "Check earth continuity, polarity and fuse rating (3 A)."
+          },
+          {
+            "step": 30,
+            "task": "Check the operation of the overheat thermostat and all safety devices."
+          },
+          {
+            "step": 31,
+            "task": "Check the firmware version (d.95) against current technical bulletins."
+          },
+          {
+            "step": 32,
+            "task": "Check room controls, programmer and frost protection."
+          }
+        ]
+      },
+      {
+        "section": "Finishing",
+        "tasks": [
+          {
+            "step": 33,
+            "task": "Reset the service reminder (d.96 = 0)."
+          },
+          {
+            "step": 34,
+            "task": "Complete the service log and record all readings."
+          },
+          {
+            "step": 35,
+            "task": "Leave the appliance in normal operation and explain any findings to the user."
+          }
+        ]
+      }
+    ]
+  }
+]

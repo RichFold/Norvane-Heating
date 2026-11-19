@@ -1,0 +1,443 @@
+[
+  {
+    "model": "c24",
+    "title": "Norvane C24 homeowner user guide",
+    "controls": {
+      "summary": "The control panel is behind the drop-down flap on the front of the boiler.",
+      "items": [
+        {
+          "control": "Display",
+          "description": "Shows the heating flow temperature when running, the system pressure when idle, and a fault code beginning with F if something needs attention."
+        },
+        {
+          "control": "Heating dial (radiator symbol)",
+          "description": "Sets the temperature of the water sent to your radiators, from 30 °C to 80 °C. Around 60 °C to 65 °C suits most homes and keeps the boiler condensing efficiently."
+        },
+        {
+          "control": "Hot water dial (tap symbol)",
+          "description": "Sets the hot water temperature at the tap, from 40 °C to 60 °C. We suggest 50 °C."
+        },
+        {
+          "control": "Mode button",
+          "description": "Cycles between Winter (heating and hot water), Summer (hot water only) and Standby (frost protection only)."
+        },
+        {
+          "control": "Reset button",
+          "description": "Press and hold for 3 seconds to restart the boiler after a lockout."
+        }
+      ]
+    },
+    "toppingUpPressure": {
+      "applies": true,
+      "normalRange": "1.0 to 1.5 bar when the heating is cold",
+      "steps": [
+        "Switch the heating off and let the system cool for at least an hour.",
+        "Read the pressure on the display. If it is below 1.0 bar, the system needs topping up.",
+        "Find the grey filling lever underneath the boiler, on the left-hand side.",
+        "Pull the lever down slowly. You will hear water entering the system.",
+        "Watch the display and release the lever when the pressure reaches 1.3 bar. Do not go above 1.5 bar.",
+        "Check the lever has sprung back fully, then switch the heating on again."
+      ],
+      "warning": "If you need to top up more than twice a year, or the pressure climbs above 2.5 bar when the heating is hot, ask a registered engineer to check the system."
+    },
+    "reset": {
+      "steps": [
+        "Note the fault code on the display before you do anything.",
+        "Press and hold the Reset button for 3 seconds, then release.",
+        "Wait up to 2 minutes while the boiler runs its start-up checks."
+      ],
+      "limit": "You can reset up to 3 times in any 15 minutes. If the fault returns, stop and call a registered engineer. Repeated resets will not fix the cause.",
+      "warning": "If you smell gas, do not reset the boiler. Leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "frostProtection": {
+      "summary": "Frost protection works in every mode, including Standby, as long as the gas and electricity are on.",
+      "details": [
+        "If the water inside the boiler drops below 5 °C, the pump and burner run until it reaches 15 °C.",
+        "This protects the boiler itself, not the whole house. Leave the room thermostat at 12 °C or higher if you are away in winter.",
+        "The condensate pipe can freeze in very cold weather. If it does, the display shows F25. See the fault code page for the safe way to thaw it."
+      ]
+    },
+    "annualService": {
+      "interval": "Every 12 months",
+      "summary": "Your 10-year warranty depends on a service by a registered engineer every 12 months. The spanner symbol on the display lights up 11 months after the last service as a reminder.",
+      "whatToExpect": [
+        "The visit takes about 45 minutes.",
+        "The engineer checks combustion, safety devices, the flue and the condensate trap, and records the visit in your service log.",
+        "Keep the service log safe. You will need it if you ever make a warranty claim."
+      ]
+    },
+    "dailyUseTips": [
+      "Bleed radiators once a year, before the heating season.",
+      "Keep the area around the boiler clear and never block air vents or the flue terminal outside.",
+      "A lower heating dial setting with longer running times is usually cheaper than short bursts at high temperature."
+    ]
+  },
+  {
+    "model": "c30",
+    "title": "Norvane C30 homeowner user guide",
+    "controls": {
+      "summary": "The control panel is behind the drop-down flap on the front of the boiler.",
+      "items": [
+        {
+          "control": "Display",
+          "description": "Shows the heating flow temperature when running, the system pressure when idle, and a fault code beginning with F if something needs attention."
+        },
+        {
+          "control": "Heating dial (radiator symbol)",
+          "description": "Sets the temperature of the water sent to your radiators, from 30 °C to 80 °C. Around 60 °C to 65 °C suits most homes and keeps the boiler condensing efficiently."
+        },
+        {
+          "control": "Hot water dial (tap symbol)",
+          "description": "Sets the hot water temperature at the tap, from 40 °C to 60 °C. We suggest 50 °C."
+        },
+        {
+          "control": "Mode button",
+          "description": "Cycles between Winter (heating and hot water), Summer (hot water only) and Standby (frost protection only)."
+        },
+        {
+          "control": "Reset button",
+          "description": "Press and hold for 3 seconds to restart the boiler after a lockout."
+        }
+      ]
+    },
+    "toppingUpPressure": {
+      "applies": true,
+      "normalRange": "1.0 to 1.5 bar when the heating is cold",
+      "steps": [
+        "Switch the heating off and let the system cool for at least an hour.",
+        "Read the pressure on the display. If it is below 1.0 bar, the system needs topping up.",
+        "Find the grey filling lever underneath the boiler, on the left-hand side.",
+        "Pull the lever down slowly. You will hear water entering the system.",
+        "Watch the display and release the lever when the pressure reaches 1.3 bar. Do not go above 1.5 bar.",
+        "Check the lever has sprung back fully, then switch the heating on again."
+      ],
+      "warning": "If you need to top up more than twice a year, or the pressure climbs above 2.5 bar when the heating is hot, ask a registered engineer to check the system."
+    },
+    "reset": {
+      "steps": [
+        "Note the fault code on the display before you do anything.",
+        "Press and hold the Reset button for 3 seconds, then release.",
+        "Wait up to 2 minutes while the boiler runs its start-up checks."
+      ],
+      "limit": "You can reset up to 3 times in any 15 minutes. If the fault returns, stop and call a registered engineer. Repeated resets will not fix the cause.",
+      "warning": "If you smell gas, do not reset the boiler. Leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "frostProtection": {
+      "summary": "Frost protection works in every mode, including Standby, as long as the gas and electricity are on.",
+      "details": [
+        "If the water inside the boiler drops below 5 °C, the pump and burner run until it reaches 15 °C.",
+        "This protects the boiler itself, not the whole house. Leave the room thermostat at 12 °C or higher if you are away in winter.",
+        "The condensate pipe can freeze in very cold weather. If it does, the display shows F25. See the fault code page for the safe way to thaw it."
+      ]
+    },
+    "annualService": {
+      "interval": "Every 12 months",
+      "summary": "Your 10-year warranty depends on a service by a registered engineer every 12 months. The spanner symbol on the display lights up 11 months after the last service as a reminder.",
+      "whatToExpect": [
+        "The visit takes about 45 minutes.",
+        "The engineer checks combustion, safety devices, the flue and the condensate trap, and records the visit in your service log.",
+        "Keep the service log safe. You will need it if you ever make a warranty claim."
+      ]
+    },
+    "dailyUseTips": [
+      "Bleed radiators once a year, before the heating season.",
+      "Keep the area around the boiler clear and never block air vents or the flue terminal outside.",
+      "A lower heating dial setting with longer running times is usually cheaper than short bursts at high temperature."
+    ]
+  },
+  {
+    "model": "c35",
+    "title": "Norvane C35 homeowner user guide",
+    "controls": {
+      "summary": "The control panel is behind the drop-down flap on the front of the boiler.",
+      "items": [
+        {
+          "control": "Display",
+          "description": "Shows the heating flow temperature when running, the system pressure when idle, and a fault code beginning with F if something needs attention."
+        },
+        {
+          "control": "Heating dial (radiator symbol)",
+          "description": "Sets the temperature of the water sent to your radiators, from 30 °C to 80 °C. Around 60 °C to 65 °C suits most homes and keeps the boiler condensing efficiently."
+        },
+        {
+          "control": "Hot water dial (tap symbol)",
+          "description": "Sets the hot water temperature at the tap, from 40 °C to 60 °C. We suggest 50 °C."
+        },
+        {
+          "control": "Mode button",
+          "description": "Cycles between Winter (heating and hot water), Summer (hot water only) and Standby (frost protection only)."
+        },
+        {
+          "control": "Reset button",
+          "description": "Press and hold for 3 seconds to restart the boiler after a lockout."
+        }
+      ]
+    },
+    "toppingUpPressure": {
+      "applies": true,
+      "normalRange": "1.0 to 1.5 bar when the heating is cold",
+      "steps": [
+        "Switch the heating off and let the system cool for at least an hour.",
+        "Read the pressure on the display. If it is below 1.0 bar, the system needs topping up.",
+        "Find the grey filling lever underneath the boiler, on the left-hand side.",
+        "Pull the lever down slowly. You will hear water entering the system.",
+        "Watch the display and release the lever when the pressure reaches 1.3 bar. Do not go above 1.5 bar.",
+        "Check the lever has sprung back fully, then switch the heating on again."
+      ],
+      "warning": "If you need to top up more than twice a year, or the pressure climbs above 2.5 bar when the heating is hot, ask a registered engineer to check the system."
+    },
+    "reset": {
+      "steps": [
+        "Note the fault code on the display before you do anything.",
+        "Press and hold the Reset button for 3 seconds, then release.",
+        "Wait up to 2 minutes while the boiler runs its start-up checks."
+      ],
+      "limit": "You can reset up to 3 times in any 15 minutes. If the fault returns, stop and call a registered engineer. Repeated resets will not fix the cause.",
+      "warning": "If you smell gas, do not reset the boiler. Leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "frostProtection": {
+      "summary": "Frost protection works in every mode, including Standby, as long as the gas and electricity are on.",
+      "details": [
+        "If the water inside the boiler drops below 5 °C, the pump and burner run until it reaches 15 °C.",
+        "This protects the boiler itself, not the whole house. Leave the room thermostat at 12 °C or higher if you are away in winter.",
+        "The condensate pipe can freeze in very cold weather. If it does, the display shows F25. See the fault code page for the safe way to thaw it."
+      ]
+    },
+    "annualService": {
+      "interval": "Every 12 months",
+      "summary": "Your 12-year warranty depends on a service by a registered engineer every 12 months. The spanner symbol on the display lights up 11 months after the last service as a reminder.",
+      "whatToExpect": [
+        "The visit takes about 45 minutes.",
+        "The engineer checks combustion, safety devices, the flue and the condensate trap, and records the visit in your service log.",
+        "Keep the service log safe. You will need it if you ever make a warranty claim."
+      ]
+    },
+    "dailyUseTips": [
+      "Bleed radiators once a year, before the heating season.",
+      "Keep the area around the boiler clear and never block air vents or the flue terminal outside.",
+      "A lower heating dial setting with longer running times is usually cheaper than short bursts at high temperature."
+    ]
+  },
+  {
+    "model": "s25",
+    "title": "Norvane S25 homeowner user guide",
+    "controls": {
+      "summary": "The control panel is behind the drop-down flap on the front of the boiler.",
+      "items": [
+        {
+          "control": "Display",
+          "description": "Shows the heating flow temperature when running, the system pressure when idle, and a fault code beginning with F if something needs attention."
+        },
+        {
+          "control": "Heating dial (radiator symbol)",
+          "description": "Sets the temperature of the water sent to your radiators, from 30 °C to 80 °C. Around 60 °C to 65 °C suits most homes and keeps the boiler condensing efficiently."
+        },
+        {
+          "control": "Hot water",
+          "description": "Hot water temperature is set on your cylinder thermostat, not on the boiler. Keep the cylinder at 60 °C."
+        },
+        {
+          "control": "Mode button",
+          "description": "Cycles between Winter (heating and hot water), Summer (hot water only) and Standby (frost protection only)."
+        },
+        {
+          "control": "Reset button",
+          "description": "Press and hold for 3 seconds to restart the boiler after a lockout."
+        }
+      ]
+    },
+    "toppingUpPressure": {
+      "applies": true,
+      "normalRange": "1.0 to 1.5 bar when the heating is cold",
+      "steps": [
+        "Switch the heating off and let the system cool for at least an hour.",
+        "Read the pressure on the display. If it is below 1.0 bar, the system needs topping up.",
+        "Find the grey filling lever underneath the boiler, on the left-hand side.",
+        "Pull the lever down slowly. You will hear water entering the system.",
+        "Watch the display and release the lever when the pressure reaches 1.3 bar. Do not go above 1.5 bar.",
+        "Check the lever has sprung back fully, then switch the heating on again."
+      ],
+      "warning": "If you need to top up more than twice a year, or the pressure climbs above 2.5 bar when the heating is hot, ask a registered engineer to check the system."
+    },
+    "reset": {
+      "steps": [
+        "Note the fault code on the display before you do anything.",
+        "Press and hold the Reset button for 3 seconds, then release.",
+        "Wait up to 2 minutes while the boiler runs its start-up checks."
+      ],
+      "limit": "You can reset up to 3 times in any 15 minutes. If the fault returns, stop and call a registered engineer. Repeated resets will not fix the cause.",
+      "warning": "If you smell gas, do not reset the boiler. Leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "frostProtection": {
+      "summary": "Frost protection works in every mode, including Standby, as long as the gas and electricity are on.",
+      "details": [
+        "If the water inside the boiler drops below 5 °C, the pump and burner run until it reaches 15 °C.",
+        "This protects the boiler itself, not the whole house. Leave the room thermostat at 12 °C or higher if you are away in winter.",
+        "The condensate pipe can freeze in very cold weather. If it does, the display shows F25. See the fault code page for the safe way to thaw it."
+      ]
+    },
+    "annualService": {
+      "interval": "Every 12 months",
+      "summary": "Your 10-year warranty depends on a service by a registered engineer every 12 months. The spanner symbol on the display lights up 11 months after the last service as a reminder.",
+      "whatToExpect": [
+        "The visit takes about 45 minutes.",
+        "The engineer checks combustion, safety devices, the flue and the condensate trap, and records the visit in your service log.",
+        "Keep the service log safe. You will need it if you ever make a warranty claim."
+      ]
+    },
+    "dailyUseTips": [
+      "Bleed radiators once a year, before the heating season.",
+      "Keep the area around the boiler clear and never block air vents or the flue terminal outside.",
+      "A lower heating dial setting with longer running times is usually cheaper than short bursts at high temperature."
+    ]
+  },
+  {
+    "model": "r18",
+    "title": "Norvane R18 homeowner user guide",
+    "controls": {
+      "summary": "The control panel is behind the drop-down flap on the front of the boiler.",
+      "items": [
+        {
+          "control": "Display",
+          "description": "Shows the heating flow temperature when running, the system pressure when idle, and a fault code beginning with F if something needs attention."
+        },
+        {
+          "control": "Heating dial (radiator symbol)",
+          "description": "Sets the temperature of the water sent to your radiators, from 30 °C to 80 °C. Around 60 °C to 65 °C suits most homes and keeps the boiler condensing efficiently."
+        },
+        {
+          "control": "Hot water",
+          "description": "Hot water temperature is set on your cylinder thermostat, not on the boiler. Keep the cylinder at 60 °C."
+        },
+        {
+          "control": "Mode button",
+          "description": "Cycles between Winter (heating and hot water), Summer (hot water only) and Standby (frost protection only)."
+        },
+        {
+          "control": "Reset button",
+          "description": "Press and hold for 3 seconds to restart the boiler after a lockout."
+        }
+      ]
+    },
+    "toppingUpPressure": {
+      "applies": false,
+      "normalRange": "Not applicable. The R18 works on an open-vented system.",
+      "steps": [
+        "Your system is filled automatically from the small feed and expansion tank in the loft, so there is no pressure to top up.",
+        "If radiators are cold at the top, bleed them with a radiator key and the tank will refill the system on its own.",
+        "If the system keeps needing to be bled, ask a registered engineer to check the feed tank and ball valve."
+      ],
+      "warning": "Do not fit a filling loop to this boiler. It is not designed for a sealed system unless an engineer has installed the sealed system kit."
+    },
+    "reset": {
+      "steps": [
+        "Note the fault code on the display before you do anything.",
+        "Press and hold the Reset button for 3 seconds, then release.",
+        "Wait up to 2 minutes while the boiler runs its start-up checks."
+      ],
+      "limit": "You can reset up to 3 times in any 15 minutes. If the fault returns, stop and call a registered engineer. Repeated resets will not fix the cause.",
+      "warning": "If you smell gas, do not reset the boiler. Leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "frostProtection": {
+      "summary": "Frost protection works in every mode, including Standby, as long as the gas and electricity are on.",
+      "details": [
+        "If the water inside the boiler drops below 5 °C, the pump and burner run until it reaches 15 °C.",
+        "This protects the boiler itself, not the whole house. Leave the room thermostat at 12 °C or higher if you are away in winter.",
+        "The condensate pipe can freeze in very cold weather. If it does, the display shows F25. See the fault code page for the safe way to thaw it."
+      ]
+    },
+    "annualService": {
+      "interval": "Every 12 months",
+      "summary": "Your 7-year warranty depends on a service by a registered engineer every 12 months. The spanner symbol on the display lights up 11 months after the last service as a reminder.",
+      "whatToExpect": [
+        "The visit takes about 45 minutes.",
+        "The engineer checks combustion, safety devices, the flue and the condensate trap, and records the visit in your service log.",
+        "Keep the service log safe. You will need it if you ever make a warranty claim."
+      ]
+    },
+    "dailyUseTips": [
+      "Bleed radiators once a year, before the heating season.",
+      "Keep the area around the boiler clear and never block air vents or the flue terminal outside.",
+      "A lower heating dial setting with longer running times is usually cheaper than short bursts at high temperature."
+    ]
+  },
+  {
+    "model": "h30",
+    "title": "Norvane H30 Hybrid homeowner user guide",
+    "controls": {
+      "summary": "The control panel is behind the drop-down flap on the front of the boiler.",
+      "items": [
+        {
+          "control": "Display",
+          "description": "Shows the heating flow temperature when running, the system pressure when idle, and a fault code beginning with F if something needs attention."
+        },
+        {
+          "control": "Heating dial (radiator symbol)",
+          "description": "Sets the temperature of the water sent to your radiators, from 30 °C to 80 °C. Around 60 °C to 65 °C suits most homes and keeps the boiler condensing efficiently."
+        },
+        {
+          "control": "Hot water dial (tap symbol)",
+          "description": "Sets the hot water temperature at the tap, from 40 °C to 60 °C. We suggest 50 °C."
+        },
+        {
+          "control": "Mode button",
+          "description": "Cycles between Winter (heating and hot water), Summer (hot water only) and Standby (frost protection only)."
+        },
+        {
+          "control": "Reset button",
+          "description": "Press and hold for 3 seconds to restart the boiler after a lockout."
+        },
+        {
+          "control": "Hybrid indicator (leaf symbol)",
+          "description": "Lit when the heat pump is doing the heating. The system picks the cheaper heat source automatically; you do not need to switch between them."
+        }
+      ]
+    },
+    "toppingUpPressure": {
+      "applies": true,
+      "normalRange": "1.0 to 1.5 bar when the heating is cold",
+      "steps": [
+        "Switch the heating off and let the system cool for at least an hour.",
+        "Read the pressure on the display. If it is below 1.0 bar, the system needs topping up.",
+        "Find the grey filling lever underneath the boiler, on the left-hand side.",
+        "Pull the lever down slowly. You will hear water entering the system.",
+        "Watch the display and release the lever when the pressure reaches 1.3 bar. Do not go above 1.5 bar.",
+        "Check the lever has sprung back fully, then switch the heating on again."
+      ],
+      "warning": "If you need to top up more than twice a year, or the pressure climbs above 2.5 bar when the heating is hot, ask a registered engineer to check the system."
+    },
+    "reset": {
+      "steps": [
+        "Note the fault code on the display before you do anything.",
+        "Press and hold the Reset button for 3 seconds, then release.",
+        "Wait up to 2 minutes while the boiler runs its start-up checks."
+      ],
+      "limit": "You can reset up to 3 times in any 15 minutes. If the fault returns, stop and call a registered engineer. Repeated resets will not fix the cause.",
+      "warning": "If you smell gas, do not reset the boiler. Leave the property and call the National Gas Emergency Service on 0800 111 999."
+    },
+    "frostProtection": {
+      "summary": "Frost protection works in every mode, including Standby, as long as the gas and electricity are on.",
+      "details": [
+        "If the water inside the boiler drops below 5 °C, the pump and burner run until it reaches 15 °C.",
+        "This protects the boiler itself, not the whole house. Leave the room thermostat at 12 °C or higher if you are away in winter.",
+        "The condensate pipe can freeze in very cold weather. If it does, the display shows F25. See the fault code page for the safe way to thaw it.",
+        "The outdoor heat pump unit defrosts itself automatically. Steam rising from it in cold weather is normal."
+      ]
+    },
+    "annualService": {
+      "interval": "Every 12 months",
+      "summary": "Your 10-year warranty depends on a service by a registered engineer every 12 months. The spanner symbol on the display lights up 11 months after the last service as a reminder.",
+      "whatToExpect": [
+        "The visit takes about 45 minutes.",
+        "The engineer checks combustion, safety devices, the flue and the condensate trap, and records the visit in your service log.",
+        "Keep the service log safe. You will need it if you ever make a warranty claim."
+      ]
+    },
+    "dailyUseTips": [
+      "Bleed radiators once a year, before the heating season.",
+      "Keep the area around the boiler clear and never block air vents or the flue terminal outside.",
+      "A lower heating dial setting with longer running times is usually cheaper than short bursts at high temperature.",
+      "Keep the outdoor unit clear of leaves, snow and anything stored against it."
+    ]
+  }
+]
