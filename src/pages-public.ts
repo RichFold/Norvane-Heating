@@ -81,12 +81,11 @@ export function boilerPage(c: Ctx, id: string): Response | null {
     "@context": "https://schema.org",
     "@type": "Product",
     name: b.fullName,
-    description: b.summary,
+    description: `Fictional demo product, not for sale. ${b.summary}`,
     sku: `NV-${b.id.toUpperCase()}`,
     category: b.typeLabel,
     url,
     brand: { "@type": "Brand", name: "Norvane Heating" },
-    offers: { "@type": "AggregateOffer", priceCurrency: "GBP", lowPrice: b.priceFromGbp, highPrice: b.priceToGbp, availability: "https://schema.org/InStock" },
     weight: { "@type": "QuantitativeValue", value: b.weightKg, unitCode: "KGM" },
     height: { "@type": "QuantitativeValue", value: b.dimensions.heightMm, unitCode: "MMT" },
     width: { "@type": "QuantitativeValue", value: b.dimensions.widthMm, unitCode: "MMT" },
@@ -218,7 +217,7 @@ export function findInstaller(c: Ctx): Response {
   const area = query ? postcodeArea(query) : undefined;
   const matches = area ? installers.filter((i) => i.postcodeAreas.includes(area)) : [];
   const card = (i: (typeof installers)[number]) => html`<li class="card">${cardHead(i.town.slice(0, 2).toUpperCase(), i.name)}
-<p>${i.town}. Rated ${i.rating} out of 5.</p><p><a href="tel:${i.phone.replace(/\s/g, "")}">${i.phone}</a></p>
+<p>${i.town}. Rated ${i.rating} out of 5.</p><p>${i.phone} <span class="muted">(not a real number)</span></p>
 <p class="muted">Fits: ${i.installs.join(", ")}. Covers: ${i.postcodeAreas.join(", ")}.</p></li>`;
   return page({
     ...base(c),

@@ -41,7 +41,8 @@ h2{font-size:1.45rem;margin-top:2em}
 h3{font-size:1.1rem}
 p{margin:0 0 1em}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.notice{background:var(--navy);color:#f5e9dc;font-size:.82rem;text-align:center;padding:6px 12px}
+.notice{background:#fcd34d;color:#1c1917;font-size:.95rem;font-weight:600;text-align:center;padding:10px 14px;border-bottom:2px solid #b45309}
+.notice a{color:#1c1917}
 .site-header{background:var(--card);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding-top:12px;padding-bottom:12px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem;color:var(--navy);text-decoration:none}
@@ -162,8 +163,8 @@ export function page(o: PageOptions): Response {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${o.title} | Norvane Heating</title>
-<meta name="description" content="${o.description}">
+<title>${o.title} (fictional demo) | Norvane Heating</title>
+<meta name="description" content="Fictional demo by Fold Digital. ${o.description}">
 ${o.noindex ? raw('<meta name="robots" content="noindex,nofollow">') : html`<link rel="canonical" href="${canonical}">`}
 ${o.env.WEBMCP_OT_TOKEN ? html`<meta http-equiv="origin-trial" content="${o.env.WEBMCP_OT_TOKEN}">` : ""}
 <meta name="theme-color" content="#10283b">
@@ -173,7 +174,7 @@ ${o.jsonLd ? raw(`<script type="application/ld+json">${JSON.stringify(o.jsonLd).
 <script src="/webmcp.js" defer></script>
 </head>
 <body data-engineer="${o.session ? "true" : "false"}">
-<div class="notice" role="note">${NOTICE}</div>
+<div class="notice" role="note">This is a fictional demo by Fold Digital. Not for real gas work. <a href="/demo">How this demo works</a></div>
 <header class="site-header"><div class="wrap">
 <a class="brand" href="/">${raw(LOGO)}<span>Norvane Heating</span></a>
 <nav class="main" aria-label="Main">
