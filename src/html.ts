@@ -95,6 +95,10 @@ input[type=text],select{font:inherit;padding:10px 12px;border:1px solid #b9b1a4;
 .inline-form{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
 .inline-form label{flex:1 1 200px}
 .error{background:#fdecec;border-left:4px solid #b42318;border-radius:8px;padding:12px 16px;color:#7a1810}
+.stat{font-size:2.4rem;font-weight:700;color:var(--navy);line-height:1.1;margin:0 0 .2em}
+.bar-cell{display:flex;align-items:center;gap:8px;min-width:120px}
+td code{white-space:nowrap}
+.bar{display:inline-block;height:10px;border-radius:0 4px 4px 0;background:var(--navy)}
 .fault{scroll-margin-top:16px}
 .fault + .fault{margin-top:18px}
 .doors{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
@@ -201,7 +205,7 @@ ${
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   if (!headers.has("Content-Security-Policy")) {
-    headers.set("Content-Security-Policy", "default-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'");
+    headers.set("Content-Security-Policy", "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; style-src 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'");
   }
   if (o.noindex || o.portal) {
     headers.set("X-Robots-Tag", "noindex, nofollow");

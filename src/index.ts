@@ -7,6 +7,7 @@ import { isActiveEngineer } from "./data";
 import { allowed, tooManyRequests } from "./limits";
 
 export { RateGuard } from "./limits";
+export { ToolLog } from "./analytics";
 import { engineerMcp } from "./mcp";
 import { site } from "./site";
 import type { EngineerProps, Env } from "./types";

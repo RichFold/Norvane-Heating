@@ -1,8 +1,11 @@
 // The two MCP doors. Both are stateless Streamable HTTP servers built from the shared tool registry.
 import { McpServer } from "@modelcontextprotocol/server";
 import { createMcpHandler } from "agents/mcp/server";
+import { env } from "cloudflare:workers";
+import { recordCall } from "./analytics";
 import { LookupError } from "./data";
 import { resultText, runTool, toolsFor } from "./tools";
+import type { Env } from "./types";
 import { NOTICE } from "./types";
 
 function createServer(engineer: boolean) {
@@ -19,6 +22,7 @@ function createServer(engineer: boolean) {
     },
   );
 
+  const door = engineer ? "mcp-engineer" : "mcp-public";
   for (const tool of toolsFor(engineer)) {
     server.registerTool(
       tool.name,
@@ -32,9 +36,11 @@ function createServer(engineer: boolean) {
       async (args: unknown) => {
         try {
           const result = runTool(tool, args);
+          await recordCall(env as unknown as Env, door, tool, args, true);
           return { content: [{ type: "text" as const, text: resultText(result) }], structuredContent: result };
         } catch (error) {
           if (!(error instanceof LookupError)) throw error;
+          await recordCall(env as unknown as Env, door, tool, args, false);
           return { content: [{ type: "text" as const, text: `${error.message}\n\n${NOTICE}` }], isError: true };
         }
       },

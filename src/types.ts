@@ -4,6 +4,7 @@ export interface Env {
   ASSETS: Fetcher;
   OAUTH_KV: KVNamespace;
   OAUTH_PROVIDER: OAuthHelpers;
+  TOOL_LOG: DurableObjectNamespace<import("./analytics").ToolLog>;
   RATE_GUARD: DurableObjectNamespace<import("./limits").RateGuard>;
   COOKIE_SECRET: string;
   PUBLIC_URL: string;

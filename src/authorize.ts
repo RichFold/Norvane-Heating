@@ -10,7 +10,7 @@ import type { EngineerProps, Env } from "./types";
 
 // The verification form posts back to this page, then the browser is redirected to the client.
 // form-action is left open because that final redirect goes to the client's own callback URL.
-const CSP = "default-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'";
+const CSP = "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; style-src 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'";
 
 function screen(
   env: Env,

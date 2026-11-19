@@ -132,7 +132,9 @@ connector verification page.
    The badge shows the public tools. Sign in to the portal and the engineer tools appear. Ask the
    browser agent the same question.
 
-The `/demo` page on the site lays the three doors out side by side for presentations.
+The `/demo` page on the site lays the three doors out side by side for presentations, and
+`/demo/analytics` shows which tools agents have called and through which door. It records the
+door, tool, boiler model and fault code for each call, and nothing that identifies a person.
 
 ## Run it locally
 
@@ -210,6 +212,7 @@ src/tools.ts        The shared tool registry
 src/mcp.ts          The two MCP servers
 src/authorize.ts    Engineer verification screen for OAuth
 src/auth.ts         Signed cookie sessions
+src/analytics.ts    Tool-call log and summary for /demo/analytics
 src/limits.ts       Rate limiting and the sign-in attempt counter
 src/pages-*.ts      Server-rendered pages
 src/html.ts         Layout, styles and HTML helpers

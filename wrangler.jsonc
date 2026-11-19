@@ -21,10 +21,17 @@
     { "binding": "OAUTH_KV" }
   ],
   // Rate limits: an exact per-IP counter. The limits themselves are in src/limits.ts.
-  "durable_objects": { "bindings": [{ "name": "RATE_GUARD", "class_name": "RateGuard" }] },
+  "durable_objects": {
+    "bindings": [
+      { "name": "RATE_GUARD", "class_name": "RateGuard" },
+      // Tool-call log behind /demo/analytics.
+      { "name": "TOOL_LOG", "class_name": "ToolLog" }
+    ]
+  },
   "migrations": [
     { "tag": "v1", "new_sqlite_classes": ["LoginGuard"] },
-    { "tag": "v2", "renamed_classes": [{ "from": "LoginGuard", "to": "RateGuard" }] }
+    { "tag": "v2", "renamed_classes": [{ "from": "LoginGuard", "to": "RateGuard" }] },
+    { "tag": "v3", "new_sqlite_classes": ["ToolLog"] }
   ],
   "vars": {
     // Optional. Forces a canonical public origin (no trailing slash). Left empty, the Worker uses

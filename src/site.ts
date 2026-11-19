@@ -1,6 +1,8 @@
 // The default handler: the website, the public /mcp endpoint, the WebMCP tool API and /authorize.
 import { clearSessionCookie, getSession, sessionCookie } from "./auth";
+import { recordCall } from "./analytics";
 import { authorize } from "./authorize";
+import { analyticsPage } from "./pages-analytics";
 import { boilers, LookupError, verifyEngineer } from "./data";
 import { allowed, tooManyRequests } from "./limits";
 import { publicMcp } from "./mcp";
@@ -49,9 +51,14 @@ export async function site(request: Request, env: Env, ctx: ExecutionContext): P
     if (tool.tier === "engineer" && !session) {
       return json({ error: "unauthorised", message: "Sign in to the engineer portal to use this tool.", notice: NOTICE }, 401);
     }
+    const door = session ? "webmcp-engineer" : "webmcp-public";
+    const args = await request.json().catch(() => ({}));
     try {
-      return json(runTool(tool, await request.json().catch(() => ({}))));
+      const result = runTool(tool, args);
+      await recordCall(env, door, tool, args, true);
+      return json(result);
     } catch (error) {
+      if (error instanceof LookupError) await recordCall(env, door, tool, args, false);
       if (error instanceof LookupError) return json({ error: "invalid_request", message: error.message, notice: NOTICE }, 400);
       throw error;
     }
@@ -114,6 +121,7 @@ export async function site(request: Request, env: Env, ctx: ExecutionContext): P
   if (path === "/find-an-installer") return pub.findInstaller(c);
   if (path === "/warranty") return pub.warrantyPage(c);
   if (path === "/demo") return pub.demoPage(c);
+  if (path === "/demo/analytics") return analyticsPage(c);
   const [, section, id, extra] = path.split("/");
   if (!extra && id) {
     const response = section === "boilers" ? pub.boilerPage(c, id) : section === "guides" ? pub.guidePage(c, id) : null;

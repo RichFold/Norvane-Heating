@@ -285,6 +285,7 @@ export function demoPage(c: Ctx): Response {
 <p><strong>Gated:</strong> engineer tools are registered after portal sign-in and removed on sign-out. The browser session is the gate, so there is no OAuth at all.</p>
 <p>The badge in the bottom corner shows what is registered right now.</p></section>
 </div>
+<p><a class="btn" href="/demo/analytics">See what agents have been asking</a></p>
 <h2>What each side of the gate can see</h2>
 <div class="doors">
 <section class="card">${cardHead("H", "Homeowner tools (public)")}${names("public")}</section>
