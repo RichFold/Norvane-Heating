@@ -68,6 +68,10 @@ export default {
     const publicUrl = (bindings.PUBLIC_URL || origin).replace(/\/+$/, "");
     const env: Env = { ...bindings, PUBLIC_URL: publicUrl };
     const provider = providerFor(publicUrl);
+    // TEMPORARY diagnostic: binding names only, never values.
+    if (pathname === "/api/diag") {
+      return Response.json({ keys: Object.keys(bindings), direct: typeof bindings.COOKIE_SECRET, length: String(bindings.COOKIE_SECRET ?? "").length, spread: typeof env.COOKIE_SECRET });
+    }
     // Rate limits for the routes the OAuth provider answers itself, so the public URL cannot run up usage.
     if (pathname === "/mcp/pro" && !(await allowed(env, request, "mcp"))) {
       return tooManyRequests("MCP requests");
