@@ -1,4 +1,6 @@
-// Rate limits, using the Workers Rate Limiting binding. Counters live at the edge: no KV writes, no cost per check.
+// Rate limits. Usage caps use the Workers Rate Limiting binding (approximate, no cost per check).
+// Sign-in attempts use a Durable Object counter (exact).
+import { DurableObject } from "cloudflare:workers";
 import type { Env } from "./types";
 import { NOTICE } from "./types";
 
@@ -19,9 +21,31 @@ export function tooManyRequests(what: string): Response {
   );
 }
 
-/** Login attempts are limited per IP address and per registration number, so neither can be used to brute-force the register. */
-export async function loginAllowed(env: Env, request: Request, regNumber: string): Promise<boolean> {
-  const byIp = await allowed(env.LOGIN_LIMITER, `ip:${clientIp(request)}`);
-  const byNumber = await allowed(env.LOGIN_LIMITER, `reg:${regNumber.replace(/[^0-9]/g, "").slice(0, 12)}`);
-  return byIp && byNumber;
+const LOGIN_LIMIT = 5;
+const LOGIN_WINDOW_MS = 60_000;
+
+/**
+ * A strict counter for sign-in attempts. The Rate Limiting binding is fast and free but only
+ * approximate, which is fine for capping usage and not good enough to stop someone guessing
+ * registration numbers. One small Durable Object per IP address counts exactly.
+ */
+export class LoginGuard extends DurableObject {
+  attempt(): boolean {
+    const now = Date.now();
+    const state = this.ctx.storage.kv.get<{ start: number; count: number }>("window");
+    const current = state && now - state.start < LOGIN_WINDOW_MS ? state : { start: now, count: 0 };
+    current.count += 1;
+    this.ctx.storage.kv.put("window", current);
+    return current.count <= LOGIN_LIMIT;
+  }
+}
+
+/** Five sign-in attempts a minute per IP address, on both the portal form and the OAuth verification form. */
+export async function loginAllowed(env: Env, request: Request): Promise<boolean> {
+  try {
+    return await env.LOGIN_GUARD.getByName(`ip:${clientIp(request)}`).attempt();
+  } catch (error) {
+    console.error("Login guard unavailable", error);
+    return true;
+  }
 }

@@ -96,8 +96,9 @@ Points worth noticing in the code:
 - **Stateless MCP.** `createMcpHandler` from `agents/mcp/server` over Streamable HTTP. No Durable
   Objects and no sessions.
 - **Every tool is read-only**, marked `readOnlyHint: true`, and has an output schema.
-- **Rate limits** on both MCP endpoints, the WebMCP tool API, both sign-in forms and the OAuth
-  endpoints, using the Workers Rate Limiting binding.
+- **Rate limits** on both MCP endpoints, the WebMCP tool API and the OAuth endpoints, using the
+  Workers Rate Limiting binding (approximate). Both sign-in forms use an exact counter in a small
+  Durable Object: five attempts a minute per IP address.
 
 ### Tools
 
@@ -209,7 +210,7 @@ src/tools.ts        The shared tool registry
 src/mcp.ts          The two MCP servers
 src/authorize.ts    Engineer verification screen for OAuth
 src/auth.ts         Signed cookie sessions
-src/limits.ts       Rate limiting
+src/limits.ts       Rate limiting and the sign-in attempt counter
 src/pages-*.ts      Server-rendered pages
 src/html.ts         Layout, styles and HTML helpers
 ```

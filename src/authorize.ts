@@ -108,7 +108,7 @@ export async function authorize(request: Request, env: Env): Promise<Response> {
         const details = await oauth.describeConsent(authRequest);
         return screen(env, request, { details, handle, session: null, error, regNumber, status });
       };
-      if (!(await loginAllowed(env, request, regNumber))) {
+      if (!(await loginAllowed(env, request))) {
         return retry("Too many attempts. Wait a minute and try again.", 429);
       }
       const result = verifyEngineer(regNumber, surname);

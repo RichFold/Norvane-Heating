@@ -64,11 +64,14 @@ export async function site(request: Request, env: Env, ctx: ExecutionContext): P
       const form = await request.formData();
       const regNumber = String(form.get("regNumber") ?? "");
       const next = safeNext(String(form.get("next") ?? ""));
-      if (!(await loginAllowed(env, request, regNumber))) {
+      if (!(await loginAllowed(env, request))) {
         return portal.loginPage(c, { error: "Too many sign-in attempts. Wait a minute and try again.", next, regNumber, status: 429 });
       }
       const result = verifyEngineer(regNumber, String(form.get("surname") ?? ""));
       if (!result.ok) return portal.loginPage(c, { error: result.message, next, regNumber, status: result.reason === "no_match" ? 401 : 403 });
+      if (!env.COOKIE_SECRET) {
+        return portal.loginPage(c, { error: "Sign-in is not set up yet: the COOKIE_SECRET secret is missing from this deployment.", next, regNumber, status: 503 });
+      }
       const cookie = await sessionCookie(env, {
         regNumber: result.engineer.regNumber,
         name: `${result.engineer.firstName} ${result.engineer.surname}`,

@@ -5,7 +5,7 @@ export interface Env {
   OAUTH_KV: KVNamespace;
   OAUTH_PROVIDER: OAuthHelpers;
   MCP_LIMITER: RateLimit;
-  LOGIN_LIMITER: RateLimit;
+  LOGIN_GUARD: DurableObjectNamespace<import("./limits").LoginGuard>;
   OAUTH_LIMITER: RateLimit;
   COOKIE_SECRET: string;
   PUBLIC_URL: string;
