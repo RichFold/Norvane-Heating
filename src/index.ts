@@ -4,9 +4,9 @@
 //   3. WebMCP         tools registered in the browser by /webmcp.js, calling /api/tools
 import { OAuthProvider, type OAuthResourceContext } from "@cloudflare/workers-oauth-provider";
 import { isActiveEngineer } from "./data";
-import { allowed, clientIp, tooManyRequests } from "./limits";
+import { allowed, tooManyRequests } from "./limits";
 
-export { LoginGuard } from "./limits";
+export { RateGuard } from "./limits";
 import { engineerMcp } from "./mcp";
 import { site } from "./site";
 import type { EngineerProps, Env } from "./types";
@@ -68,10 +68,10 @@ export default {
     const env: Env = { ...bindings, PUBLIC_URL: publicUrl };
     const provider = providerFor(publicUrl);
     // Rate limits for the routes the OAuth provider answers itself, so the public URL cannot run up usage.
-    if (pathname === "/mcp/pro" && !(await allowed(env.MCP_LIMITER, `pro:${clientIp(request)}`))) {
+    if (pathname === "/mcp/pro" && !(await allowed(env, request, "mcp"))) {
       return tooManyRequests("MCP requests");
     }
-    if ((pathname.startsWith("/oauth/") || pathname === "/authorize") && !(await allowed(env.OAUTH_LIMITER, `oauth:${clientIp(request)}`))) {
+    if ((pathname.startsWith("/oauth/") || pathname === "/authorize") && !(await allowed(env, request, "oauth"))) {
       return tooManyRequests("authorisation requests");
     }
     // Some clients look for the protected resource metadata at the root well-known path first.

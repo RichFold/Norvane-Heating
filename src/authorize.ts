@@ -5,7 +5,7 @@ import { AuthorizationError, type AuthRequest, type ConsentDescription } from "@
 import { getSession } from "./auth";
 import { normaliseRegNumber, verifyEngineer } from "./data";
 import { html, page } from "./html";
-import { loginAllowed } from "./limits";
+import { allowed } from "./limits";
 import type { EngineerProps, Env } from "./types";
 
 // The verification form posts back to this page, then the browser is redirected to the client.
@@ -108,7 +108,7 @@ export async function authorize(request: Request, env: Env): Promise<Response> {
         const details = await oauth.describeConsent(authRequest);
         return screen(env, request, { details, handle, session: null, error, regNumber, status });
       };
-      if (!(await loginAllowed(env, request))) {
+      if (!(await allowed(env, request, "login"))) {
         return retry("Too many attempts. Wait a minute and try again.", 429);
       }
       const result = verifyEngineer(regNumber, surname);

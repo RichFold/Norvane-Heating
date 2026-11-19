@@ -4,9 +4,7 @@ export interface Env {
   ASSETS: Fetcher;
   OAUTH_KV: KVNamespace;
   OAUTH_PROVIDER: OAuthHelpers;
-  MCP_LIMITER: RateLimit;
-  LOGIN_GUARD: DurableObjectNamespace<import("./limits").LoginGuard>;
-  OAUTH_LIMITER: RateLimit;
+  RATE_GUARD: DurableObjectNamespace<import("./limits").RateGuard>;
   COOKIE_SECRET: string;
   PUBLIC_URL: string;
   WEBMCP_OT_TOKEN?: string;

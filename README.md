@@ -96,9 +96,9 @@ Points worth noticing in the code:
 - **Stateless MCP.** `createMcpHandler` from `agents/mcp/server` over Streamable HTTP. No Durable
   Objects and no sessions.
 - **Every tool is read-only**, marked `readOnlyHint: true`, and has an output schema.
-- **Rate limits** on both MCP endpoints, the WebMCP tool API and the OAuth endpoints, using the
-  Workers Rate Limiting binding (approximate). Both sign-in forms use an exact counter in a small
-  Durable Object: five attempts a minute per IP address.
+- **Rate limits** on both MCP endpoints, the WebMCP tool API, both sign-in forms and the OAuth
+  endpoints. Each is an exact per-IP counter in a small Durable Object (`src/limits.ts`): 60 MCP
+  calls, 5 sign-in attempts and 20 OAuth requests a minute.
 
 ### Tools
 
@@ -150,7 +150,7 @@ cp .dev.vars.example .dev.vars
 npm run dev
 ```
 
-The site is at `http://localhost:8787`. Wrangler simulates KV and the rate limiters locally, so no
+The site is at `http://localhost:8787`. Wrangler simulates KV and the rate limit counters locally, so no
 Cloudflare account is needed.
 
 Check the public MCP endpoint with the MCP Inspector:

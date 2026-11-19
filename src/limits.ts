@@ -1,15 +1,49 @@
-// Rate limits. Usage caps use the Workers Rate Limiting binding (approximate, no cost per check).
-// Sign-in attempts use a Durable Object counter (exact).
+// Rate limits, counted exactly in a small Durable Object per IP address and route group.
+// (The Workers Rate Limiting binding was tried first: in production it is only approximate and
+// let most of a burst through, so it could not be relied on for sign-in attempts or usage caps.)
 import { DurableObject } from "cloudflare:workers";
 import type { Env } from "./types";
 import { NOTICE } from "./types";
 
+const WINDOW_MS = 60_000;
+
+/** Requests allowed per minute, per IP address. */
+export const LIMITS = {
+  /** MCP requests to /mcp and /mcp/pro, and WebMCP tool calls to /api/tools. */
+  mcp: 60,
+  /** Sign-in attempts on the portal form and the OAuth verification form. */
+  login: 5,
+  /** OAuth client registration, authorisation page and token endpoint. */
+  oauth: 20,
+} as const;
+
+/**
+ * One instance per IP address and limit. The count lives in memory only: an instance stays loaded
+ * while requests keep arriving, and once it has been idle long enough to be unloaded the window
+ * has passed anyway. Nothing is written to storage, so a check costs one Durable Object request.
+ */
+export class RateGuard extends DurableObject {
+  private start = 0;
+  private count = 0;
+
+  attempt(limit: number): boolean {
+    const now = Date.now();
+    if (now - this.start >= WINDOW_MS) {
+      this.start = now;
+      this.count = 0;
+    }
+    this.count += 1;
+    return this.count <= limit;
+  }
+}
+
 export const clientIp = (request: Request) => request.headers.get("CF-Connecting-IP") ?? "local";
 
-export async function allowed(limiter: RateLimit, key: string): Promise<boolean> {
+export async function allowed(env: Env, request: Request, bucket: keyof typeof LIMITS): Promise<boolean> {
   try {
-    return (await limiter.limit({ key })).success;
-  } catch {
+    return await env.RATE_GUARD.getByName(`${bucket}:${clientIp(request)}`).attempt(LIMITS[bucket]);
+  } catch (error) {
+    console.error("Rate guard unavailable", error);
     return true; // Never take the demo down because the limiter is unavailable.
   }
 }
@@ -19,33 +53,4 @@ export function tooManyRequests(what: string): Response {
     { error: "rate_limited", message: `Too many ${what}. Wait a minute and try again.`, notice: NOTICE },
     { status: 429, headers: { "Retry-After": "60", "Cache-Control": "no-store" } },
   );
-}
-
-const LOGIN_LIMIT = 5;
-const LOGIN_WINDOW_MS = 60_000;
-
-/**
- * A strict counter for sign-in attempts. The Rate Limiting binding is fast and free but only
- * approximate, which is fine for capping usage and not good enough to stop someone guessing
- * registration numbers. One small Durable Object per IP address counts exactly.
- */
-export class LoginGuard extends DurableObject {
-  attempt(): boolean {
-    const now = Date.now();
-    const state = this.ctx.storage.kv.get<{ start: number; count: number }>("window");
-    const current = state && now - state.start < LOGIN_WINDOW_MS ? state : { start: now, count: 0 };
-    current.count += 1;
-    this.ctx.storage.kv.put("window", current);
-    return current.count <= LOGIN_LIMIT;
-  }
-}
-
-/** Five sign-in attempts a minute per IP address, on both the portal form and the OAuth verification form. */
-export async function loginAllowed(env: Env, request: Request): Promise<boolean> {
-  try {
-    return await env.LOGIN_GUARD.getByName(`ip:${clientIp(request)}`).attempt();
-  } catch (error) {
-    console.error("Login guard unavailable", error);
-    return true;
-  }
 }

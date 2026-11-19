@@ -20,15 +20,11 @@
     // OAuth clients, grants and tokens. No ID: wrangler creates the namespace on the first deploy.
     { "binding": "OAUTH_KV" }
   ],
-  // Exact counter for sign-in attempts (portal form and OAuth verification form), per IP address.
-  "durable_objects": { "bindings": [{ "name": "LOGIN_GUARD", "class_name": "LoginGuard" }] },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["LoginGuard"] }],
-  // Approximate usage caps. These are eventually consistent across Cloudflare's servers.
-  "ratelimits": [
-    // MCP calls and WebMCP tool calls, per IP address.
-    { "name": "MCP_LIMITER", "namespace_id": "4101", "simple": { "limit": 60, "period": 60 } },
-    // OAuth client registration, authorisation page and token endpoint, per IP address.
-    { "name": "OAUTH_LIMITER", "namespace_id": "4103", "simple": { "limit": 20, "period": 60 } }
+  // Rate limits: an exact per-IP counter. The limits themselves are in src/limits.ts.
+  "durable_objects": { "bindings": [{ "name": "RATE_GUARD", "class_name": "RateGuard" }] },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["LoginGuard"] },
+    { "tag": "v2", "renamed_classes": [{ "from": "LoginGuard", "to": "RateGuard" }] }
   ],
   "vars": {
     // Optional. Forces a canonical public origin (no trailing slash). Left empty, the Worker uses

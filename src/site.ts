@@ -2,7 +2,7 @@
 import { clearSessionCookie, getSession, sessionCookie } from "./auth";
 import { authorize } from "./authorize";
 import { boilers, LookupError, verifyEngineer } from "./data";
-import { allowed, clientIp, loginAllowed, tooManyRequests } from "./limits";
+import { allowed, tooManyRequests } from "./limits";
 import { publicMcp } from "./mcp";
 import * as pub from "./pages-public";
 import * as portal from "./pages-portal";
@@ -27,7 +27,7 @@ export async function site(request: Request, env: Env, ctx: ExecutionContext): P
 
   // Door 2a: the public MCP endpoint. No sign-in, homeowner tools only.
   if (path === "/mcp") {
-    if (!(await allowed(env.MCP_LIMITER, `mcp:${clientIp(request)}`))) return tooManyRequests("MCP requests");
+    if (!(await allowed(env, request, "mcp"))) return tooManyRequests("MCP requests");
     return publicMcp(request, env, ctx);
   }
 
@@ -43,7 +43,7 @@ export async function site(request: Request, env: Env, ctx: ExecutionContext): P
   }
   if (path.startsWith("/api/tools/") && method === "POST") {
     if (!sameOrigin(request, url)) return json({ error: "forbidden", message: "Cross-origin calls are not allowed.", notice: NOTICE }, 403);
-    if (!(await allowed(env.MCP_LIMITER, `api:${clientIp(request)}`))) return tooManyRequests("tool calls");
+    if (!(await allowed(env, request, "mcp"))) return tooManyRequests("tool calls");
     const tool = tools.find((t) => t.name === path.slice("/api/tools/".length));
     if (!tool) return json({ error: "not_found", message: "Unknown tool.", notice: NOTICE }, 404);
     if (tool.tier === "engineer" && !session) {
@@ -64,7 +64,7 @@ export async function site(request: Request, env: Env, ctx: ExecutionContext): P
       const form = await request.formData();
       const regNumber = String(form.get("regNumber") ?? "");
       const next = safeNext(String(form.get("next") ?? ""));
-      if (!(await loginAllowed(env, request))) {
+      if (!(await allowed(env, request, "login"))) {
         return portal.loginPage(c, { error: "Too many sign-in attempts. Wait a minute and try again.", next, regNumber, status: 429 });
       }
       const result = verifyEngineer(regNumber, String(form.get("surname") ?? ""));
