@@ -134,7 +134,8 @@ connector verification page.
 
 The `/demo` page on the site lays the three doors out side by side for presentations, and
 `/demo/analytics` shows which tools agents have called and through which door. It records the
-door, tool, boiler model and fault code for each call, and nothing that identifies a person.
+door, tool, boiler model and fault code for each call, and nothing that identifies a person. To clear
+it, set `CLEARED_AT` in `src/analytics.ts` to the current time and deploy.
 
 ## Run it locally
 

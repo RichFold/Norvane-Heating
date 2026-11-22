@@ -37,12 +37,19 @@ export interface Summary {
 
 const KEEP_DAYS = 90;
 
+/**
+ * Calls recorded before this moment are deleted. To clear the analytics page (for example after
+ * testing, before a presentation), set this to the current time and deploy.
+ */
+const CLEARED_AT = Date.parse("2026-11-22T15:42:11Z");
+
 export class ToolLog extends DurableObject {
   constructor(ctx: DurableObjectState, env: Env) {
     super(ctx, env);
     ctx.storage.sql.exec(
       "CREATE TABLE IF NOT EXISTS calls (ts INTEGER NOT NULL, door TEXT NOT NULL, tool TEXT NOT NULL, tier TEXT NOT NULL, model TEXT NOT NULL, code TEXT NOT NULL, ok INTEGER NOT NULL)",
     );
+    ctx.storage.sql.exec("DELETE FROM calls WHERE ts < ?", CLEARED_AT);
   }
 
   record(e: ToolEvent): void {
