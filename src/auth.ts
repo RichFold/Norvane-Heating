@@ -1,4 +1,7 @@
-// Portal sessions: a signed cookie, HMAC-SHA256 with COOKIE_SECRET. No server-side session store.
+// Portal sessions: a signed cookie, HMAC-SHA256. No server-side session store.
+// The signing secret is the COOKIE_SECRET Worker secret when one is set. When it is not, the
+// Worker generates a random secret once and keeps it in KV, so sign-in works on a fresh deploy
+// with nothing to configure. Either way the secret lives in Cloudflare, never in the code.
 import { isActiveEngineer } from "./data";
 import type { EngineerProps, Env } from "./types";
 
@@ -13,9 +16,25 @@ const b64url = (bytes: ArrayBuffer | Uint8Array) =>
     .replace(/=+$/, "");
 const fromB64url = (text: string) => Uint8Array.from(atob(text.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
 
+const KV_SECRET_KEY = "norvane:cookie-secret";
+let cachedKey: { secret: string; key: CryptoKey } | undefined;
+
+async function signingSecret(env: Env): Promise<string> {
+  if (env.COOKIE_SECRET) return env.COOKIE_SECRET;
+  const stored = await env.OAUTH_KV.get(KV_SECRET_KEY);
+  if (stored) return stored;
+  const generated = b64url(crypto.getRandomValues(new Uint8Array(48)));
+  await env.OAUTH_KV.put(KV_SECRET_KEY, generated);
+  // Read back, so two Workers starting at the same moment settle on the same secret.
+  return (await env.OAUTH_KV.get(KV_SECRET_KEY)) ?? generated;
+}
+
 async function key(env: Env): Promise<CryptoKey> {
-  if (!env.COOKIE_SECRET) throw new Error("COOKIE_SECRET is not set. Run: npx wrangler secret put COOKIE_SECRET");
-  return crypto.subtle.importKey("raw", encoder.encode(env.COOKIE_SECRET), { name: "HMAC", hash: "SHA-256" }, false, ["sign", "verify"]);
+  if (cachedKey && (!env.COOKIE_SECRET || cachedKey.secret === env.COOKIE_SECRET)) return cachedKey.key;
+  const secret = await signingSecret(env);
+  const imported = await crypto.subtle.importKey("raw", encoder.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign", "verify"]);
+  cachedKey = { secret, key: imported };
+  return imported;
 }
 
 export async function sessionCookie(env: Env, engineer: EngineerProps): Promise<string> {

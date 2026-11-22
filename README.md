@@ -176,12 +176,14 @@ npm run deploy
 
 The first deploy creates the `OAUTH_KV` namespace for you and prints the Worker's URL.
 
+That is all a working deploy needs. The portal session cookie is signed with a secret the Worker
+generates on first use and keeps in the KV namespace. To supply your own instead, set
+`COOKIE_SECRET` as a Worker secret; it takes over as soon as it exists, and anyone signed in at
+the time is asked to sign in again.
+
 ```bash
 npx wrangler secret put COOKIE_SECRET
 ```
-
-Use a long random value, for example the output of `openssl rand -base64 48`. Portal sign-in
-returns an error until this secret is set.
 
 The Worker works out its public origin from each request, so there is no URL to configure. OAuth
 tokens are bound to that origin plus `/mcp/pro`.
@@ -190,7 +192,7 @@ Configuration:
 
 | Name              | Kind   | Purpose                                                                  |
 | ----------------- | ------ | ------------------------------------------------------------------------ |
-| `COOKIE_SECRET`   | Secret | Signs the portal session cookie. Lives in Cloudflare, never in the repo  |
+| `COOKIE_SECRET`   | Secret | Optional. Signs the portal session cookie; generated and kept in KV if unset |
 | `PUBLIC_URL`      | Var    | Optional. Forces a canonical origin; empty means use the request origin  |
 | `WEBMCP_OT_TOKEN` | Var    | Chrome origin trial token for WebMCP. Adds the `origin-trial` meta tag   |
 | `OAUTH_KV`        | KV     | OAuth clients, grants and tokens (stored hashed and encrypted)           |

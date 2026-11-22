@@ -42,5 +42,6 @@
     // Chrome origin trial token for WebMCP. Empty until the trial is registered.
     "WEBMCP_OT_TOKEN": ""
   }
-  // Secret (not stored here): COOKIE_SECRET. Set with: npx wrangler secret put COOKIE_SECRET
+  // Optional secret (not stored here): COOKIE_SECRET, set with: npx wrangler secret put COOKIE_SECRET
+  // Without it the Worker generates its own cookie-signing secret and keeps it in the KV namespace.
 }

@@ -6,7 +6,8 @@ export interface Env {
   OAUTH_PROVIDER: OAuthHelpers;
   TOOL_LOG: DurableObjectNamespace<import("./analytics").ToolLog>;
   RATE_GUARD: DurableObjectNamespace<import("./limits").RateGuard>;
-  COOKIE_SECRET: string;
+  /** Optional. Without it the Worker generates a signing secret and keeps it in KV. */
+  COOKIE_SECRET?: string;
   PUBLIC_URL: string;
   WEBMCP_OT_TOKEN?: string;
 }
